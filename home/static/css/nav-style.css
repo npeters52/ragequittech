@@ -3,6 +3,7 @@
   background-color: #333;
   position: fixed;
   top: 0;
+  z-index: 1;
   width: 100%;
   margin-left: -15px;
 }
@@ -30,4 +31,17 @@
 
 .nav-li a:hover {
     color: white;
+}
+
+.title-font {
+    font-family: 'Bungee Inline', cursive;
+}
+
+.question_block {
+    height: 30px;
+    margin-top: 15px;
+}
+
+.question-ul {
+    list-style-type: none;
 }
