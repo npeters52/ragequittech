@@ -1,0 +1,24 @@
+{% load static %}
+<html>
+    <head>
+        {% include "home/head.html" %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+    </head>
+    <body>
+        <div>
+            <div class="col-sm-12 home-splash">
+                <div>
+                    {% include "home/nav.html" %}
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 home-main">
+                    
+                    </div>
+                    <div class="col-sm-4 sidebar">
+                        {% include 'polls/index.html' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
