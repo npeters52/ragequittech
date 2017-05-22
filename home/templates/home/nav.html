@@ -1,0 +1,14 @@
+{% load static %}
+<head>        
+        <link rel="stylesheet" type="text/css" href="{% static 'css/nav-style.css' %}"/>
+</head>
+
+<nav class="site-nav">
+    <ul class="nav-ul">
+        <li class="nav-li"><a class="nav-a" href="{% url 'home' %}">Rage Quit Tech</a></li>
+        <li class="nav-li"><a class="nav-a" href="#news">Podcast</a></li>
+        <li class="nav-li"><a class="nav-a" href="#contact">Blog</a></li>
+        <li class="nav-li"><a class="nav-a" href="/polls">Polls</a></li>
+        <li class="nav-li"><a class="nav-a" href="#about">Around the Web</a></li>
+    </ul>
+</nav>

@@ -1,0 +1,22 @@
+{% load static %}
+<html>
+    <head>
+        <title>Rage Quit Tech</title>           
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+        <!-- font-awesome -->
+        <script src="https://use.fontawesome.com/6d1f38039d.js"></script>
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+        <div>
+            <div class="col-sm-12 home-splash">
+                <div class="title-font">
+                    {% include "home/nav.html" %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
