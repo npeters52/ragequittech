@@ -2,7 +2,7 @@
 
 <body>
     {% include "home/nav.html" %}
-    <div class="row col-sm-12">
+    <div class="row col-sm-12 poll-splash">
         <h1> {{question.question_text}} </h1>
 
         {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
