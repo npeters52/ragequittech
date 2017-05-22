@@ -1,4 +1,17 @@
 .poll-splash {
-    height: 500px;
-    margin-top: 30px;
+    padding-top: 20px;
+    height: 100%;
+    background-color: #45484c;
+}
+
+.poll_list {
+    height: 50%;
+}
+
+.question-ul {
+    text-align: right;
+}
+
+.results-heading {
+    padding-top: 50px;
 }
