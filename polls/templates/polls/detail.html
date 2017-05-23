@@ -1,11 +1,12 @@
 {% load static %}
 
 <head>
+    {% include "home/head.html" %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/poll-style.css' %}"/>
 </head>
 <body>
     {% include "home/nav.html" %}
-    <div class="row col-sm-12 poll-splash">
+    <div class="row col-sm-12 poll-splash text-center theme-green">
         <h1> {{question.question_text}} </h1>
 
         {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
@@ -16,7 +17,7 @@
             <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
             <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br />
         {% endfor %}
-        <input type="submit" value="Vote" />
+        <input class="btn btn-primary" type="submit" value="Vote" />
         </form>
     </div>
 </body>
