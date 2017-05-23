@@ -9,18 +9,16 @@
         {% include "home/nav.html" %}
     </div>
     <div class="row">
-        <div class="col-sm-12 results-heading">
+        <div class="col-sm-12 poll-splash text-center theme-green">
             <h1>{{ question.question_text }}</h1>
-        </div>
-        <div class="col-sm-12 results-splash">
             <ul>
             {% for choice in question.choice_set.all %}
-                <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+                <li class="result-li">{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
             {% endfor %}
             </ul>
-        </div>
-        <div class="col-sm-12">
-            <a href="{% url 'polls:detail' question.id %}">Vote again?</a>
+            <div class="row back-button">
+                <a class="btn btn-primary" href="{% url 'home' %}">Home</a>
+            </div>
         </div>
     </div>
 </body>
