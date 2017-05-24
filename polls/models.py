@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils import timezone
-
+from django.contrib.auth.models import User
 import datetime
 
 # Create your models here.
@@ -10,6 +10,8 @@ class Question(models.Model):
     """
     question_text = models.CharField(max_length=200)
     created = models.DateTimeField('date published')
+    is_active = models.BooleanField(default=True)
+    author = models.ForeignKey(User, null=True, blank=True)
 
     def was_published_recently(self):
         """
