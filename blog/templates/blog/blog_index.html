@@ -1,0 +1,25 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/blog-style.css' %}"/>
+    </head>
+    <body>
+        <div class="col-sm-12 blog-splash">
+            {% if latest_blog_list %}
+            <div class=" blog_list">
+                <ul class="blog-ul">
+                    {% for blog in latest_blog_list %}
+                    <div  class="row col-sm-12 blog-block">
+                        <li>
+                            <a class="theme-green clickable" style="text-decoration:none" href='{% url blog_detail blog.slug %}'>{{ blog.title }} </a>
+                        </li>
+                    </div>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                    <p> No articles are available </p>
+            </div>
+            {% endif %}
+        </div>
+    </body>
+</html>

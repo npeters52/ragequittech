@@ -17,9 +17,11 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from polls import views
 from home.views import home
+from blog import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^polls/', include('polls.urls')),
     url(r'^$', home, name='home'),
+    url(r'^blog/', include('blog.urls')),
 ]
