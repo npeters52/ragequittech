@@ -1,0 +1,25 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/poll-style.css' %}"/>
+    </head>
+    <body>
+        <div class="col-sm-12 poll-splash">
+            {% if latest_question_list %}
+            <div class=" poll_list">
+                <ul class="question-ul">
+                    {% for question in latest_question_list %}
+                    <div  class="row col-sm-12 question_block">
+                        <li>
+                            <a class="theme-green clickable" style="text-decoration:none" href="{% url 'polls:detail' question.id %}">{{ question.question_text }} </a>
+                        </li>
+                    </div>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                    <p> No polls are available </p>
+            </div>
+            {% endif %}
+        </div>
+    </body>
+</html>
