@@ -14,6 +14,12 @@ class Article(models.Model):
     content = RichTextField()
     preview_image = models.FileField(null=True, blank=True)
 
+    def __str__(self):
+        return self.title
+
 class Category(models.Model):
     name = models.CharField(max_length=200)
     article = models.ForeignKey(Article, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
