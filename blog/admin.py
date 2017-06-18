@@ -2,9 +2,9 @@ from django.contrib import admin
 from .models import Article, Category
 
 class ArticleAdmin(admin.ModelAdmin):
-    list_display = ('title', 'is_published', 'is_archived', 'pub_date', 'author', 'content', 'image')
+    list_display = ('title', 'is_published', 'is_archived', 'pub_date', 'author', 'content', 'preview_image')
     fieldsets = [
-        (None, { 'fields': [('title', 'is_published', 'is_archived', 'pub_date', 'author', 'content', 'image')] } ),
+        (None, { 'fields': [('title', 'is_published', 'is_archived', 'pub_date', 'author', 'content', 'preview_image')] } ),
     ]
 
     def save_model(self, request, obj, form, change):
