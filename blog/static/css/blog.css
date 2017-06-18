@@ -11,3 +11,7 @@
 .article_block {
     height: 50px;
 }
+
+.top-article {
+  height: 200px !important;
+}
