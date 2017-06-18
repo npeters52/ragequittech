@@ -1,0 +1,31 @@
+{% load staticfiles %}
+
+<head>
+    {% include "home/head.html" %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}"/>
+</head>
+
+<body>
+    <div class="row col-sm-12">
+      <div>
+          {% include "home/nav.html" %}
+      </div>
+      <div class="row blog-splash">
+        {% if article_list %}
+        <div class="blog_list">
+            <ul class="blog-ul">
+                {% for article in article_list %}
+                <div  class="row col-sm-12 article_block">
+                    <li>
+                        <a class="theme-green clickable" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
+                    </li>
+                </div>
+                {% endfor %}
+            </ul>
+        </div>
+        {% else %}
+            <p> No articles are available </p>
+        {% endif %}
+      </div>
+    </div>
+</body>
