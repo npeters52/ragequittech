@@ -1,5 +1,7 @@
 .blog-splash {
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
 }
 
 .blog-content {
@@ -14,4 +16,8 @@
 
 .top-article {
   height: 200px !important;
+}
+
+.blog-ul {
+  list-style: none;
 }
