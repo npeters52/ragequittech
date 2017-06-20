@@ -1,3 +1,12 @@
+.theme-green {
+    color: #68f442;
+    font-family: 'Bungee Inline', cursive;
+}
+
+a:hover {
+  color: white !important;
+}
+
 .blog-splash {
   margin-top: 50px;
   margin-left: 20px !important;
@@ -18,6 +27,10 @@
   height: 200px !important;
 }
 
+.top-article-title {
+  font-size: 70px;
+}
+
 .blog-ul {
   list-style: none;
 }
@@ -30,4 +43,20 @@
 .preview-image {
   height: 400px;
   width: 600px;
+}
+
+.article-list {
+  font-size: 25px;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  height: 150px;
+  border-style: dashed;
+}
+
+.article-block {
+    margin-top: 40px;
 }
