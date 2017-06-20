@@ -21,3 +21,13 @@
 .blog-ul {
   list-style: none;
 }
+
+.resize {
+  width: 100%;
+  height: 100%;
+}
+
+.preview-image {
+  height: 400px;
+  width: 600px;
+}
