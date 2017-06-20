@@ -1,11 +1,6 @@
 .poll-splash {
     padding-top: 20px;
-    height: 100%;
     background-color: #45484c;
-}
-
-.poll_list {
-    height: 50%;
 }
 
 .question-ul {

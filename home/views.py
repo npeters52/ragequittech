@@ -6,7 +6,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
 
 def home(request):
-    latest_question_list = Question.objects.order_by('-created')[:5]
+    latest_question_list = Question.objects.order_by('-created')[:3]
     top_article = Article.objects.order_by('-pub_date')[:1]
     article_list = Article.objects.order_by('-pub_date')[1:5]
     context = {
