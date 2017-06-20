@@ -1,5 +1,7 @@
 .blog-splash {
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
 }
 
 .blog-content {
@@ -17,4 +19,11 @@
 .top-article {
   height: 200px !important;
 }
+<<<<<<< HEAD
 >>>>>>> bbca4d3fd5cfbeb152999da151d581e54e7b01fc
+=======
+
+.blog-ul {
+  list-style: none;
+}
+>>>>>>> 6d667f3d5ad04a91fb0650223257345f29c28dfb

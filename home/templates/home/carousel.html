@@ -33,3 +33,21 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
+
+<script>
+        // Activate Carousel
+        $('#homeCarousel').carousel({
+        interval: 2000
+        })
+
+        // Enable Carousel Indicators
+        $(".item").click(function(){
+            $("#homeCarousel").carousel(1);
+        });
+
+        // Enable Carousel Controls
+        $(".left").click(function(){
+            $("#homeCarousel").carousel("prev");
+        });
+
+    </script>
