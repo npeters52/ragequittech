@@ -1,11 +1,5 @@
 .poll-splash {
-    padding-top: 20px;
-    height: 100%;
     background-color: #45484c;
-}
-
-.poll_list {
-    height: 50%;
 }
 
 .question-ul {
@@ -54,16 +48,16 @@ input[type='checkbox'] {
     border:2px solid #555;
 }
 
-.question_block {
+.question-block {
     height: 100px;
     border-style: solid;
+    margin-right: 95px;
 }
 
 .clickable {
     padding-top: 30px;
     display: block;
     height: 100%;
-    width: 100%;
     text-decoration: none;
 }
 
