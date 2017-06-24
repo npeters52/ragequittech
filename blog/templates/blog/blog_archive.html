@@ -1,0 +1,32 @@
+{% load staticfiles %}
+
+<head>
+    {% include "home/head.html" %}
+    <link rel="stylesheet" type='text/css' href="{% static 'css/blog.css' %}">
+</head>
+
+<body>
+  <div class="col-sm-12 theme-grey">
+      <div>
+          {% include "home/nav.html" %}
+      </div>
+      <div class="archive-splash">
+        <h1 class="theme-yellow text-center">Blog Archive</h1>
+          {% if archive_list %}
+          <div class="row col-sm-12">
+            <ul class="blog-ul">
+                {% for article in archive_list %}
+                <div  class="row col-sm-12 article-block text-center">
+                    <li>
+                        <a class="theme-green article-list" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
+                    </li>
+                </div>
+                {% endfor %}
+            </ul>
+          </div>
+          {% else %}
+          <p> No articles are available </p>
+          {% endif %}
+      </div>
+  </div>
+</body>
