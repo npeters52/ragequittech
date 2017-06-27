@@ -14,6 +14,7 @@
             <div class="row col-sm-12">
                 <div class="podcast-splash">
                     {% if podcast_list %}
+                    <ul class="podcast-block">
                         {% for podcast in podcast_list %}
                         <div  class="row col-sm-12 podcast-block text-center">
                             <li>
@@ -23,6 +24,7 @@
                             </li>
                         </div>
                         {% endfor %}
+                    </ul>
                     {% else %}
                         <p>No podcasts are available</p>
                     {% endif %}

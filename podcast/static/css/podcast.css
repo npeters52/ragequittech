@@ -1,3 +1,7 @@
 .podcast-splash {
     margin-top: 100px;
 }
+
+.podcast-block {
+  list-style: none;
+}
