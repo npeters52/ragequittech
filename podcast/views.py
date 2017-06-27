@@ -13,6 +13,6 @@ def podcast_index(request):
     }
     return render(request, 'podcast/podcast_index.html', context)
 
-def podcast_detail(request):
+def podcast_detail(request, podcast_id):
     podcast = get_object_or_404(Podcast, pk=podcast_id)
     return render(request, 'podcast/podcast_detail.html', {'podcast':podcast})
