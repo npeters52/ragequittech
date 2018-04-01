@@ -2,6 +2,7 @@
     padding-top: 100px;
     background-color: black;
     height: 100%;
+    width: 100%;
 }
 
 .podcast-block {
@@ -24,4 +25,8 @@
 
 .theme-green {
   color: #68f442;
+}
+
+.podcast-content {
+  padding-top: 40px;
 }
