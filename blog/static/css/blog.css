@@ -67,7 +67,7 @@ a:hover {
   width: 100%;
   text-decoration: none;
   height: 150px;
-  border-style: dashed;
+  border-style: solid;
 }
 
 .article-block {
