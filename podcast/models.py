@@ -15,7 +15,7 @@ class Channel(models.Model):
 class Podcast(models.Model):
     name = models.CharField(max_length=300)
     link = models.URLField()
-    author = models.ForeignKey(User, null=True, blank=True)
+    author = models.ForeignKey(User, null=True, blank=True, on_delete=models.CASCADE)
     is_published = models.BooleanField(default=True)
     is_archived = models.BooleanField(default=False)
     channel = models.ForeignKey(Channel, on_delete=models.CASCADE, blank=True, null=True)

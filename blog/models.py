@@ -12,8 +12,8 @@ class Article(models.Model):
     pub_date = models.DateTimeField('publish date')
     author = models.ForeignKey(User, null=True, blank=True, on_delete=models.CASCADE)
     content = models.CharField(max_length=10000)
-    image = models.FileField()
-    author = models.ForeignKey(User, null=True, blank=True)
+    image = models.FileField(default=None)
+    author = models.ForeignKey(User, null=True, blank=True, on_delete=models.CASCADE)
     content = RichTextField()
     preview_image = models.FileField(null=True, blank=True)
 

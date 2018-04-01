@@ -7,11 +7,11 @@ from django.urls import reverse
 # Create your views here.
 
 def articles(request):
-    archive_list = Article.objects.order_by('-pub_date')[:10]
+    article_list = Article.objects.order_by('-pub_date')[:10]
     context = {
-        'archive_list':archive_list
+        'article_list':article_list
     }
-    return render(request, 'blog/blog_archive.html', context )
+    return render(request, 'blog/blog_index.html', context)
 
 def blogpost(request, article_id):
     article = get_object_or_404(Article, pk=article_id)
