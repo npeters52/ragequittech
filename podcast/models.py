@@ -20,6 +20,7 @@ class Podcast(models.Model):
     is_archived = models.BooleanField(default=False)
     channel = models.ForeignKey(Channel, on_delete=models.CASCADE, blank=True, null=True)
     pub_date = models.DateTimeField('publish date', blank=True, null=True)
+    splash_image = models.FileField(null=True, blank=True)
 
     def __str__(self):
         return self.name
