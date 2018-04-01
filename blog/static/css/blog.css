@@ -22,6 +22,10 @@ a:hover {
   margin-right: 20px !important;
 }
 
+.blog-sidebar {
+  height: 75%;
+}
+
 .blog-content {
   margin-top: 50px;
   margin-left: 190px !important;
@@ -63,7 +67,7 @@ a:hover {
   width: 100%;
   text-decoration: none;
   height: 150px;
-  border-style: dashed;
+  border-style: solid;
 }
 
 .article-block {
