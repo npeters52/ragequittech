@@ -7,20 +7,25 @@
 
 <body>
     <div>
-        <div class="col-sm-12">
+        <div class="col-sm-12 podcast-splash">
             <div>
                 {% include "home/nav.html" %}
             </div>
             <div class="row col-sm-12">
-                <div class="podcast-splash">
+                <div>
                     {% if podcast_list %}
                     <ul class="podcast-block">
                         {% for podcast in podcast_list %}
                         <div  class="row col-sm-12 podcast-block">
                             <li>
-                              <h3>
-                                <a class="theme-green top-article-title" style="text-decoration:none" href="{% url 'podcast:podcast_detail' podcast.id %}">{{ podcast.name }}
+                              <h1>
+                                <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url 'podcast:podcast_detail' podcast.id %}">{{ podcast.name }}
                               </h3>
+                              <h4>
+                                  <p class="theme-green title-font">
+                                      {{podcast.pub_date}}
+                                  </p>
+                              </h4>
                               <img class="resize" href="{% url 'podcast:podcast_detail' podcast.id %}" src="{{podcast.splash_image.url}}">
                             </li>
                         </div>

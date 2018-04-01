@@ -1,11 +1,12 @@
 .podcast-splash {
-    margin-top: 100px;
+    padding-top: 100px;
+    background-color: black;
+    height: 100%;
 }
 
 .podcast-block {
   list-style: none;
 }
-
 
 .splash-resize {
   width: 50%;
@@ -15,4 +16,12 @@
 .podcast-home-splash {
   margin-top: -10%;
   padding-left: 20%;
+}
+
+.title-font {
+  font-family: 'Bungee Inline', cursive;
+}
+
+.theme-green {
+  color: #68f442;
 }
