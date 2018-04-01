@@ -1,5 +1,5 @@
 {% load static %}
-<head>        
+<head>
         <link rel="stylesheet" type="text/css" href="{% static 'css/nav-style.css' %}"/>
         {% include 'home/head.html' %}
 </head>
@@ -7,6 +7,7 @@
 <nav class="site-nav title-font">
     <ul class="nav-ul">
         <li class="nav-li"><a class="nav-a" href="{% url 'home' %}">Rage Quit Tech</a></li>
+        <li class="title"><a class="theme-purple" href="{% url 'home' %}">Rage Quit Tech</a></li>
         <li class="nav-li"><a class="nav-a" href="/podcast">Podcast</a></li>
         <li class="nav-li"><a class="nav-a" href="/blog">Blog</a></li>
     </ul>

@@ -18,6 +18,11 @@
     color: #ffff00;
 }
 
+.display-inline {
+  display: inline;
+}
 
-
-
+.poll {
+  margin-top: -30px;
+  margin-left: -45px !important;
+}

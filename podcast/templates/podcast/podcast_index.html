@@ -1,0 +1,36 @@
+{% load staticfiles %}
+
+<head>
+    {% include "home/head.html" %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/podcast.css' %}">
+</head>
+
+<body>
+    <div>
+        <div class="col-sm-12">
+            <div>
+                {% include "home/nav.html" %}
+            </div>
+            <div class="row col-sm-12">
+                <div class="podcast-splash">
+                    {% if podcast_list %}
+                    <ul class="podcast-block">
+                        {% for podcast in podcast_list %}
+                        <div  class="row col-sm-12 podcast-block">
+                            <li>
+                              <h3>
+                                <a class="theme-green top-article-title" style="text-decoration:none" href="{% url 'podcast:podcast_detail' podcast.id %}">{{ podcast.name }}
+                              </h3>
+                              <img class="resize" href="{% url 'podcast:podcast_detail' podcast.id %}" src="{{podcast.splash_image.url}}">
+                            </li>
+                        </div>
+                        {% endfor %}
+                    </ul>
+                    {% else %}
+                        <p>No podcasts are available</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
