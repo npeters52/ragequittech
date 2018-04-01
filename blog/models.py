@@ -9,7 +9,7 @@ class Article(models.Model):
     is_published = models.BooleanField(default=True)
     is_archived = models.BooleanField(default=False)
     pub_date = models.DateTimeField('publish date')
-    author = models.ForeignKey(User, null=True, blank=True)
+    author = models.ForeignKey(User, null=True, blank=True, on_delete=models.CASCADE)
     content = models.CharField(max_length=10000)
     image = models.FileField()
 
