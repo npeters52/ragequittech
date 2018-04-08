@@ -35,3 +35,7 @@
 .podcast-content {
   padding-top: 40px;
 }
+
+a:hover {
+  color: white !important;
+}

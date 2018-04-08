@@ -17,6 +17,10 @@
     color: #ffff00;
 }
 
+.theme-white {
+    color: white;
+}
+
 .display-inline {
   display: inline;
 }

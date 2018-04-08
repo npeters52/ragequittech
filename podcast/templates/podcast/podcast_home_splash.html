@@ -10,13 +10,13 @@
         <div class="col-sm-12 podcast-home-splash">
             <div class="row col-sm-12">
                 <div class="podcast-splash">
-                    {% if top_podcast %}
+                    {% if podcast_list %}
                     <ul class="podcast-block">
-                        {% for podcast in top_podcast %}
+                        {% for podcast in podcast_list %}
                         <div  class="row col-sm-12">
                             <li>
                               <h3>
-                                <a class="theme-green top-article-title" style="text-decoration:none" href="{% url 'podcast:podcast_detail' podcast.id %}">{{ podcast.name }}
+                                <a class="theme-green top-article-title" style="text-decoration:none" href="{% url 'podcast:podcast_detail' podcast.id %}">{{ podcast.name }}</a>
                               </h3>
                             </li>
                         </div>
