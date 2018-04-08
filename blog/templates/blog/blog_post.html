@@ -6,17 +6,17 @@
 </head>
 
 <body>
-    <div class="row col-sm-12">
+    <div class="row col-sm-12 theme-black full">
         <div>
             {% include "home/nav.html" %}
         </div>
         <div class="row blog-splash">
-            <div class="row text-center">
+            <div class="row text-center theme-green">
                 <h1>{{article.title}}</h1>
                 <h3>by: {{article.author}}</h3>
                 <h4>{{article.pub_date}}</h4>
             </div>
-            <div class="row blog-content">
+            <div class="row blog-content theme-white">
               {{article.content|safe}}
             </div>
         </div>
