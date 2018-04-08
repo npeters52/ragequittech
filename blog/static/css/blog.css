@@ -16,6 +16,10 @@
     font-family: 'Bungee Inline', cursive;
 }
 
+.theme-purple {
+  color: #f218dc;
+}
+
 a:hover {
   color: white !important;
 }
