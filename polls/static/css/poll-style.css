@@ -66,3 +66,7 @@ input[type='checkbox'] {
 .question_block:hover {
     background-color: #535456;
 }
+
+.center {
+    margin: 0 auto;
+}

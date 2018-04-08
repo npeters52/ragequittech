@@ -3,13 +3,21 @@
     font-family: 'Bungee Inline', cursive;
 }
 
-.theme-grey {
-  background-color: #77787a;
+.theme-white {
+  color: white;
+}
+
+.theme-black {
+  background-color: black;
 }
 
 .theme-yellow {
     color: #ffff00;
     font-family: 'Bungee Inline', cursive;
+}
+
+.theme-purple {
+  color: #f218dc;
 }
 
 a:hover {
@@ -76,4 +84,9 @@ a:hover {
 
 .archive-splash {
   padding-top: 90px;
+}
+
+.full {
+  height: 100%;
+  width: 100%;
 }
