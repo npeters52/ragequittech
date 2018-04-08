@@ -16,3 +16,10 @@ def articles(request):
 def blogpost(request, article_id):
     article = get_object_or_404(Article, pk=article_id)
     return render(request, 'blog/blog_post.html', {'article':article})
+
+def archive(request):
+    archive_list = Article.objects.order_by('-pub_date')
+    context = {
+        'archive_list':archive_list
+    }
+    return render(request, 'blog/blog_archive.html', context)
