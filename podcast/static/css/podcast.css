@@ -27,6 +27,11 @@
   color: #68f442;
 }
 
+.theme-yellow {
+  color: #ffff00;
+  font-family: 'Bungee Inline', cursive;
+}
+
 .podcast-content {
   padding-top: 40px;
 }
