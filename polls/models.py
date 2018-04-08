@@ -11,7 +11,7 @@ class Question(models.Model):
     question_text = models.CharField(max_length=200)
     created = models.DateTimeField('date published')
     is_active = models.BooleanField(default=True)
-    author = models.ForeignKey(User, null=True, blank=True)
+    author = models.ForeignKey(User, null=True, blank=True, on_delete=models.CASCADE)
 
     def was_published_recently(self):
         """

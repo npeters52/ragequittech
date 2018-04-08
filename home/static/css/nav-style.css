@@ -1,6 +1,6 @@
 .site-nav {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(0, 0, 0);
   position: fixed;
   top: 0;
   z-index: 1;
@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(0, 0, 0);
 }
 
 .nav-li {
@@ -25,7 +25,7 @@
     font-size: 25px;
     color: #ffff00;
     text-align: center;
-    padding: 14px 16px;
+    padding: 25px 40px;
     text-decoration: none;
 }
 
@@ -44,4 +44,19 @@
 
 .question-ul {
     list-style-type: none;
+}
+
+.title {
+  color: #f218dc;
+  float: left;
+  display: block;
+  font-size: 40px;
+  color: #ffff00;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.theme-purple {
+  color: #f218dc;
 }

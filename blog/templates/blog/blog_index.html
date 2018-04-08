@@ -1,0 +1,47 @@
+{% load staticfiles %}
+
+<head>
+    {% include "home/head.html" %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}"/>
+</head>
+
+<body>
+    <div class="row col-sm-12">
+      <div class="row blog-splash">
+        {% if article_list %}
+        <div class="blog_list">
+          <div class="col-sm-8 top-article">
+              {% for article in top_article %}
+              <div class="row">
+                <h3>
+                  <a class="theme-green top-article-title" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }}
+                </h3>
+              </div>
+                {% if article.preview_image %}
+                <div class="row preview-image">
+                    <img class="splash-resize" href="{% url 'blog:blogpost' article.id %}" src="/MEDIA/{{article.preview_image.url}}">
+                  </a>
+                </div>
+                {% else %}
+                  <p>No preview image available</p>
+                {% endif %}
+              {% endfor %}
+          </div>
+          <div class="col-sm-4 blog-sidebar">
+            <ul class="blog-ul">
+                {% for article in article_list %}
+                <div  class="row col-sm-12 article-block text-center">
+                    <li>
+                        <a class="theme-green article-list" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
+                    </li>
+                </div>
+                {% endfor %}
+            </ul>
+          </div>
+        </div>
+        {% else %}
+            <p> No articles are available </p>
+        {% endif %}
+      </div>
+    </div>
+</body>

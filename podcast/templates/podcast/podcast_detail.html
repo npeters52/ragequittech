@@ -1,0 +1,33 @@
+{% load staticfiles %}
+{% load podcast_extras %}
+
+<head>
+    {% include "home/head.html" %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/podcast.css' %}">
+</head>
+
+<body>
+    <div>
+        <div class="col-sm-12 podcast-splash">
+            <div>
+                {% include "home/nav.html" %}
+            </div>
+            <div class="row col-sm-12">
+                <div>
+                    <div class="row text-center title-font theme-green">
+                        <h1>{{podcast.name}}</h1>
+                        <h3>by: {{podcast.author}}</h3>
+                        <h4>{{podcast.pub_date}}</h4>
+                    </div>
+                    <div class="row podcast-content">
+                      <!--video embed-->
+                      <div class="text-center">
+                          {{ podcast.link|youtube_embed_url|safe }}
+                      </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
