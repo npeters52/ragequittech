@@ -25,7 +25,7 @@ SECRET_KEY = 'ml0al4^zxfw9tw^@cc6trlgg1c32-34*7n2@=q&d@p@p8!5jut'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['167.99.173.214']
 
 
 # Application definition
@@ -84,10 +84,14 @@ WSGI_APPLICATION = 'ratequittech.wsgi.application'
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+  'default': {
+      'ENGINE': 'django.db.backends.postgresql_psycopg2',
+      'NAME': 'ragequittech',
+      'USER': 'ragequitdb',
+      'PASSWORD': 'yU$]uhtes"9r=7SB',
+      'HOST': 'localhost',
+      'PORT': '',
+  }
 }
 
 
