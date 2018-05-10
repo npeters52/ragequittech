@@ -1,3 +1,7 @@
+.preview-resize {
+    height: 650px;
+    width: 900px;
+}
 
 .title-font {
     font-family: 'Bungee Inline', cursive;
@@ -22,6 +26,10 @@
     color: white;
 }
 
+.theme-black {
+    color: black;
+}
+
 .display-inline {
   display: inline;
 }
@@ -36,5 +44,9 @@
 }
 
 .full-width {
+    width: 100%;
+}
+
+.full-page {
     width: 100%;
 }
