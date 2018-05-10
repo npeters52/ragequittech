@@ -1,7 +1,7 @@
 .podcast-splash {
     padding-top: 100px;
     background-color: black;
-    height: 100%;
+    height: 110%;
     width: 100%;
 }
 
@@ -27,6 +27,14 @@
   color: #68f442;
 }
 
+.theme-black {
+ background-color: black;
+}
+
+.margin-fix {
+  width: 100%;
+}
+
 .theme-yellow {
   color: #ffff00;
   font-family: 'Bungee Inline', cursive;
@@ -38,4 +46,13 @@
 
 a:hover {
   color: white !important;
+}
+
+.resize {
+  height: 500px;
+  width : 700px;
+}
+
+.center {
+   margin: auto;
 }
