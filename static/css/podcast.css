@@ -5,6 +5,10 @@
     width: 100%;
 }
 
+.podcast-archive-splash {
+  height: 200%;
+}
+
 .podcast-block {
   list-style: none;
 }
