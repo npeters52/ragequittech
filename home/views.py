@@ -10,7 +10,7 @@ import datetime
 def home(request):
     latest_question_list = Question.objects.order_by('-created')[:2]
     top_article = Article.objects.order_by('-pub_date')[:1]
-    article_list = Article.objects.order_by('-pub_date')[1:5]
+    article_list = Article.objects.order_by('-pub_date')[1:4]
     podcast_list = Podcast.objects.order_by('-pub_date')[:3]
     now = datetime.datetime.now()
     context = {
