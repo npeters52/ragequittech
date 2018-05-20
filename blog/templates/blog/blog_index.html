@@ -19,7 +19,7 @@
               </div>
                 {% if article.preview_image %}
                 <div class="row preview-image">
-                    <img class="preview-resize"  href="{% url 'blog:blogpost' article.id %}" src="{{article.preview_image.url}}">
+                    <img class="img-responsive resize"  href="{% url 'blog:blogpost' article.id %}" src="{{article.preview_image.url}}">
                   </a>
                 </div>
                 {% else %}
