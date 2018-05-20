@@ -7,7 +7,7 @@ from .models import Podcast, Channel
 # Create your views here.
 
 def podcast_index(request):
-    podcast_list = Podcast.objects.filter(is_published=True).order_by('-pub_date')[:3]
+    podcast_list = Podcast.objects()
     context = {
         'podcast_list':podcast_list
     }
