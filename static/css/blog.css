@@ -94,3 +94,7 @@ a:hover {
 .padding-bottom {
   padding-bottom: 30px;
 }
+
+.blog-title {
+  font-size: 50px;
+}
