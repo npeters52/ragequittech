@@ -1,13 +1,13 @@
 .podcast-splash {
     padding-top: 100px;
-    background-color: black;
+    background-color: white;
     height: 100%;
     width: 100%;
 }
 
 .podcast-archive-splash {
   height: 200%;
-  background-color: black;
+  background-color: white;
 }
 
 .podcast-block {
@@ -33,7 +33,7 @@
 }
 
 .theme-black {
- background-color: black;
+ background-color: white;
 }
 
 .margin-fix {
@@ -63,7 +63,7 @@ a:hover {
 }
 
 .podcast-footer {
-  background-color: black;
+  background-color: white;
   padding-bottom: 50px;
   padding-left: 6%;
 }
