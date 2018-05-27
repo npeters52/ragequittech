@@ -60,3 +60,8 @@
 .theme-purple {
   color: #f218dc;
 }
+
+.logo {
+    height: 100%;
+    width: 100%;
+}
