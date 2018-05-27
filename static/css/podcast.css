@@ -1,13 +1,13 @@
 .podcast-splash {
     padding-top: 100px;
-    background-color: white;
+    background-color: black;
     height: 100%;
     width: 100%;
 }
 
 .podcast-archive-splash {
   height: 200%;
-  background-color: white;
+  background-color: black;
 }
 
 .podcast-block {
