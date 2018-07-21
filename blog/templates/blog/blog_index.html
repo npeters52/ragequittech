@@ -18,8 +18,8 @@
                 </h3>
               </div>
                 {% if article.preview_image %}
-                <div class="row preview-image">
-                    <img  href="{% url 'blog:blogpost' article.id %}" src="{{article.preview_image.url}}">
+                <div class="row">
+                    <img class="preview-image" href="{% url 'blog:blogpost' article.id %}" src="{{article.preview_image.url}}">
                   </a>
                 </div>
                 {% else %}
