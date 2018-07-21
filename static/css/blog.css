@@ -70,6 +70,7 @@ a:hover {
 .preview-image {
   height: 200;
   width: 650px;
+  display: block;
 }
 
 .article-list {
