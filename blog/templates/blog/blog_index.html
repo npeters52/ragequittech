@@ -14,7 +14,7 @@
               {% for article in top_article %}
               <div class="row">
                 <h3>
-                  <a class="theme-white top-article-title" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }}
+                  <a class="theme-white title-font top-article-title" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }}
                 </h3>
               </div>
                 {% if article.preview_image %}
