@@ -33,6 +33,7 @@ a:hover {
 
 .blog-sidebar {
   height: 75%;
+  float: right;
 }
 
 .blog-content {
@@ -47,6 +48,7 @@ a:hover {
 
 .top-article {
   height: 200px !important;
+  float: left;
 }
 
 .top-article-title {
