@@ -32,7 +32,7 @@
                 {% for article in article_list %}
                 <div  class="row jumbotron jumbotron-fluid text-center">
                     <li>
-                        <a class="theme-green" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
+                        <a class="theme-green article-list" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
                     </li>
                 </div>
                 {% endfor %}
