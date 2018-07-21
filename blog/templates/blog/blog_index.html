@@ -30,7 +30,7 @@
           <div class="col-sm-4 blog-sidebar">
             <ul class="blog-ul">
                 {% for article in article_list %}
-                <div  class="row col-sm-12 article-block text-center">
+                <div  class="row  article-block text-center">
                     <li>
                         <a class="theme-green article-list" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
                     </li>
