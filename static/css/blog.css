@@ -98,4 +98,7 @@ a:hover {
   font-size: 50px;
 }
 
-
+.blog-image {
+  height: 75%;
+  width: 75%;
+}
