@@ -9,7 +9,7 @@ from .models import Podcast, Channel
 def podcast_index(request):
     podcast_archive = Podcast.objects.filter(is_published=True).order_by('-pub_date')
     context = {
-        'podcast_archive':podcast_archive
+        'podcast_archive': podcast_archive
     }
     return render(request, 'podcast/podcast_index.html', context)
 
