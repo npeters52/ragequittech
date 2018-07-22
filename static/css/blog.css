@@ -48,9 +48,9 @@ a:hover {
 }
 
 .top-article {
-  height: 200px !important;
   display: block;
   float: left;
+  padding-top: 10%;
 }
 
 .top-article-title {
