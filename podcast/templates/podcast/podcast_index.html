@@ -17,7 +17,7 @@
                     {% if podcast_list %}
                     <ul class="podcast-block img-responsive">
                         {% for podcast in podcast_list %}
-                        <div  class="row col-sm-12 podcast-block center">
+                        <div  class="row col-sm-12 podcast-block center theme-black">
                             <li>
                               <h1>
                                 <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url 'podcast:podcast_detail' podcast.id %}">{{ podcast.name }}
