@@ -19,7 +19,7 @@
               </div>
                 {% if article.preview_image %}
                 <div class="row blog-image">
-                    <img class="preview-image" href="{% url 'blog:blogpost' article.id %}" src="{{article.preview_image.url}}">
+                    <img class="preview-image" src="{{article.preview_image.url}}">
                 </div>
                 {% else %}
                   <p>No preview image available</p>
