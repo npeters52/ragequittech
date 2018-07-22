@@ -29,7 +29,7 @@
           <div class="col-sm-4 blog-sidebar">
             <ul class="blog-ul">
                 {% for article in article_list %}
-                <div  class="row jumbotron jumbotron-fluid">
+                <div  class="row jumbotron jumbotron-fluid text-center">
                     <li>
                         <a class="theme-green article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
                     </li>
