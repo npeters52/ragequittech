@@ -11,11 +11,9 @@
                     <ul class="podcast-block">
                         {% for podcast in podcast_list %}
                         <div  class="row col-sm-12">
-                            <li>
                               <h3>
                                 <a class="theme-green top-article-title" style="text-decoration:none" href="{% url 'podcast:podcast_detail' podcast.id %}">{{ podcast.name }}</a>
                               </h3>
-                            </li>
                         </div>
                         {% endfor %}
                     </ul>
