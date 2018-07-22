@@ -107,3 +107,7 @@ a:hover {
 .blog-image {
   height: 100%;
 }
+
+.blog-detail-footer {
+  margin-top: 15%;
+}
