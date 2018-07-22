@@ -67,7 +67,8 @@ a:hover {
 
 .podcast-header {
   background-color: black;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   padding-left: 4%;
 }
 
