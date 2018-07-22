@@ -6,34 +6,36 @@
 </head>
 
 <body>
-  <div class="col-sm-12 theme-black padding-bottom">
-      <div>
-          {% include "home/nav.html" %}
-      </div>
-      <div class="archive-splash">
-        <h1 class="theme-yellow text-center title-font blog-title">Blog Archive</h1>
-          {% if archive_list %}
-          <div>
-            <ul class="blog-ul text-center">
-                {% for article in archive_list %}
-                <div  class="row col-sm-12 theme-black">
-                    <li>
-                      <h1>
-                        <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }}
-                      </h3>
-                      <h4>
-                          <p class="theme-green title-font">
-                              {{article.pub_date}}
-                          </p>
-                      </h4>
-                    </li>
+    <div class="container-fluid">
+        <div class="col-sm-12 theme-black padding-bottom">
+            <div>
+                {% include "home/nav.html" %}
+            </div>
+            <div class="archive-splash">
+                <h1 class="theme-yellow text-center title-font blog-title">Blog Archive</h1>
+                {% if archive_list %}
+                <div>
+                    <ul class="blog-ul text-center">
+                        {% for article in archive_list %}
+                        <div  class="row theme-black">
+                            <li>
+                            <h1>
+                                <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }}
+                            </h3>
+                            <h4>
+                                <p class="theme-green title-font">
+                                    {{article.pub_date}}
+                                </p>
+                            </h4>
+                            </li>
+                        </div>
+                        {% endfor %}
+                    </ul>
                 </div>
-                {% endfor %}
-            </ul>
-          </div>
-          {% else %}
-          <p> No articles are available </p>
-          {% endif %}
-      </div>
-  </div>
+                {% else %}
+                <p> No articles are available </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
 </body>
