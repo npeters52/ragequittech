@@ -18,7 +18,7 @@
                 </h3>
               </div>
                 {% if article.preview_image %}
-                <div class="row">
+                <div>
                     <img class="preview-image" href="{% url 'blog:blogpost' article.id %}" src="{{article.preview_image.url}}">
                   </a>
                 </div>
