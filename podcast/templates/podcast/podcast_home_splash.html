@@ -3,12 +3,12 @@
 <head>
     <link rel="stylesheet" type="text/css" href="{% static 'css/podcast.css' %}">
 </head>
-    <div>
+    <div class="container-fluid">
         <div class="row col-sm-12 podcast-home-splash">
             <div class="row col-sm-12">
                 <div class="podcast-splash">
                     {% if podcast_list %}
-                    <div class="row col-sm-12 podcast-block text-center">
+                    <div class="row col-sm-12 podcast-block">
                         {% for podcast in podcast_list %}
                         <div  class="row col-sm-4">
                               <h3>
