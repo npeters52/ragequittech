@@ -7,11 +7,9 @@ from .models import Podcast, Channel
 # Create your views here.
 
 def podcast_index(request):
-    podcast_list = Podcast.objects.filter(is_published=True).order_by('-pub_date')[:3]
-    podcast_archive = Podcast.objects.filter(is_published=True).order_by('-pub_date')
+    podcast_list = Podcast.objects.filter(is_published=True).order_by('-pub_date')
     context = {
-        'podcast_list':podcast_list,
-        'podcast_archive':podcast_archive
+        'podcast_list':podcast_list
     }
     return render(request, 'podcast/podcast_index.html', context)
 
