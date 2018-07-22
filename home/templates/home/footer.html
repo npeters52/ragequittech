@@ -1,4 +1,11 @@
-<div class="container-fluid">
+{% load static %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+    {% include 'home/head.html' %}
+</head>
+
+<div class="container-fluid footer-background">
     <div class="row">
                 <div class="col-sm-4">
                     <a href="https://www.patreon.com/thoughtcosmonaut" class="theme-white title-font">Support Us</a>
