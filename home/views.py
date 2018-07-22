@@ -12,7 +12,6 @@ def home(request):
     top_article = Article.objects.order_by('-pub_date')[:1]
     article_list = Article.objects.order_by('-pub_date')[1:4]
     podcast_list = Podcast.objects.order_by('-pub_date')[:3]
-    podcast_archive = Podcast.objects.order_by('pub_date')
     now = datetime.datetime.now()
     context = {
         'latest_question_list':latest_question_list,
