@@ -26,6 +26,8 @@ a:hover {
 }
 
 .blog-splash {
+  padding-top: 50px;
+  height: 100%;
   margin-left: 20px !important;
   margin-right: 20px !important;
 }
