@@ -81,10 +81,10 @@ a:hover {
   font-size: 70px;
 }
 
-.podcast-detail-footer {
-
+.podcast-details {
+  margin-bottom: 15%;
 }
 
-.podcast-details {
+.podcast-archive-content {
   margin-bottom: 15%;
 }
