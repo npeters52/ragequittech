@@ -18,7 +18,6 @@ def home(request):
         'article_list':article_list,
         'top_article':top_article,
         'podcast_list':podcast_list,
-        'podcast_archive':podcast_archive,
         'now':now
     }
     return render(request, 'home/home.html', context)
