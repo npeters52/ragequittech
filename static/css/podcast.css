@@ -54,7 +54,6 @@
 
 .podcast-content {
   margin-top: 8%;
-  margin-bottom: 15%;
 }
 
 a:hover {
@@ -83,5 +82,9 @@ a:hover {
 }
 
 .podcast-detail-footer {
-  
+
+}
+
+.podcast-details {
+  margin-bottom: 15%;
 }
