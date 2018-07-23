@@ -126,11 +126,6 @@
     background: #ccc;
   }
 
-  .larger {
-      height: 115%;
-      width: 115%;
-  }
-
 @media screen and (max-width: 600px) {
     .topnav .search-container {
         float: none;
