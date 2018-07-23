@@ -21,6 +21,11 @@
   font-family: 'Bungee Inline', cursive;
 }
 
+.theme-blue {
+  color: blue;
+  font-family: 'Bungee Inline', cursive;
+}
+
 a:hover {
   color: #f218dc !important;
 }
