@@ -58,3 +58,9 @@
 .footer-background {
     background-color: black;
 }
+
+@media screen and (max-width: 1370px) {
+    .home-splash {
+      padding-top: 500px;
+    }
+  }
