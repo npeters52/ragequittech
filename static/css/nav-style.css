@@ -90,11 +90,11 @@
   
   .topnav a:hover {
     background-color: black;
-    color: #f218dc;
+    color: black;
   }
   
   .topnav a.active {
-    background-color: #f218dc;
+    background-color: #2196F3;
     color: white;
   }
   
@@ -114,14 +114,14 @@
     padding: 6px 10px;
     margin-top: 8px;
     margin-right: 16px;
-    background: black;
+    background: #ddd;
     font-size: 17px;
     border: none;
     cursor: pointer;
   }
   
   .topnav .search-container button:hover {
-    background: black;
+    background: #ccc;
   }
 
 @media screen and (max-width: 600px) {
