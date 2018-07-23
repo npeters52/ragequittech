@@ -61,7 +61,7 @@
   color: #f218dc;
 }
 
-.nav-li input[type=text] {
+.nav-search input[type=text] {
     float: right;
     padding: 6px;
     border: none;
