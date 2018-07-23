@@ -76,6 +76,7 @@
 .topnav {
     overflow: hidden;
     background-color: black;
+    position: fixed;
   }
   
   .topnav a {
