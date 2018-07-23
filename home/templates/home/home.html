@@ -6,10 +6,10 @@
     </head>
     <body>
         <div class="container-fluid">
+            <div class="full-width">
+                {% include "home/nav.html" %}
+            </div>
             <div class="col-sm-12 home-splash">
-                <div class="full-width">
-                    {% include "home/nav.html" %}
-                </div>
                 <div class="row">
                     <div class="col-sm-12 home-main">
                         {% include 'blog/blog_index.html' %}
