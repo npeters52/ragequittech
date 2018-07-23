@@ -3,7 +3,7 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css/nav-style.css' %}"/>
         {% include 'home/head.html' %}
 </head>
-<nav class="site-nav title-font">
+<!-- <nav class="site-nav title-font">
     <ul class="nav-ul">
         <li class="title"><a href="{% url 'home' %}"><img src="/MEDIA/logo.png"></a></li>
         <li class="nav-li"><a class="nav-a" href="https://twitter.com/ThoughtCosmona1">Stream of Thought</a></li>
@@ -11,4 +11,17 @@
         <li class="nav-li"><a class="nav-a" href="/blog">Blog</a></li>
         <li class="nav-search"><input type="text" placeholder="Search.."></li>
     </ul>
-</nav>
+</nav> -->
+
+<div class="topnav">
+        <a class="title" href="{% url 'home' %}"><img src="/MEDIA/logo.png"></a>
+        <a href="https://twitter.com/ThoughtCosmona1">Stream of Thought</a>
+        <a href="/podcast">Podcast</a>
+        <a href="/blog">Blog</a>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+</div>
