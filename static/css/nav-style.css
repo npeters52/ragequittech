@@ -81,7 +81,7 @@
   .topnav a {
     float: left;
     display: block;
-    color: #00ff37;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -89,7 +89,7 @@
   }
   
   .topnav a:hover {
-    background-color: black;
+    background-color: #ddd;
     color: black;
   }
   
