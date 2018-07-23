@@ -23,10 +23,10 @@
 
 .nav-a {
     display: block;
-    font-size: 20px;
+    font-size: 25px;
     color: #00ff37;
     text-align: center;
-    padding: 10% 10%;
+    padding: 25px 40px;
     text-decoration: none;
 }
 
@@ -67,6 +67,6 @@
     padding: .05%;
     border: none;
     margin-top: 2%;
-    margin-right: 3%;
+    margin-right: 5%;
     font-size: 17px;
 }
