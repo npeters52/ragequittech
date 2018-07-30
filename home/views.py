@@ -32,6 +32,6 @@ def search(request):
 
         found_entries = Entry.objects.filter(entry_query).order_by('-pub_date')
 
-    return render_to_response('home/search_results.html',
+    return render('home/search_results.html',
                           { 'query_string': query_string, 'found_entries': found_entries },
                           context_instance=RequestContext(request))
