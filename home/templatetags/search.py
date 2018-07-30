@@ -2,6 +2,8 @@ import re
 
 from django.db.models import Q
 
+register = template.Library()
+
 def normalize_query(query_string,
                     findterms=re.compile(r'"([^"]+)"|(\S+)').findall,
                     normspace=re.compile(r'\s{2,}').sub):
