@@ -1,4 +1,5 @@
 {% load static %}
+{% load search %}
 <head>
         <link rel="stylesheet" type="text/css" href="{% static 'css/nav-style.css' %}"/>
         {% include 'home/head.html' %}
@@ -19,7 +20,7 @@
         <a class="title-font nav-li nav-a" href="/podcast">Podcast</a>
         <a class="title-font nav-li nav-a" href="/blog">Blog</a>
         <div class="title-font nav-li search-container">
-          <form action="/action_page.php">
+          <form action="/search_results.html">
             <input type="text" placeholder="Search.." name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
           </form>
