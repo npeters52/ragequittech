@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'home',
     'blog',
     'podcast',
-    'home.templatetags.search.py',
+    'home.templatetags.search',
 ]
 
 MIDDLEWARE = [
