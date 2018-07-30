@@ -71,7 +71,7 @@ TEMPLATES = [
             ],
             'libraries':{
                     'podcast_extras': 'podcast.templatetags.podcast_extras',
-                    'search': 'templatetags.search',
+                    'search': 'home.templatetags.search',
 
             }
         },
