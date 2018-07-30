@@ -17,6 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from polls import views
 from home.views import home
+from home.views import search
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -27,4 +28,5 @@ urlpatterns = [
     url(r'^blog/', include('blog.urls')),
     url(r'^podcast/', include('podcast.urls')),
     url(r'^$', home, name='home'),
+    url(r'^search/', search, name='search')
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
