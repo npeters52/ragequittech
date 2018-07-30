@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'home',
     'blog',
     'podcast',
+    'home.templatetags.search.py',
 ]
 
 MIDDLEWARE = [
@@ -71,7 +72,7 @@ TEMPLATES = [
             ],
             'libraries':{
                     'podcast_extras': 'podcast.templatetags.podcast_extras',
-                    'search': 'home.templatetags.search.py',
+                    # 'search': 'home.templatetags.search.py',
 
             }
         },
