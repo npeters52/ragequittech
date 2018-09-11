@@ -31,7 +31,7 @@ def search(request):
 
         entry_query = get_query(query_string, ['title', 'body',])
 
-        found_entries = Entry.objects.filter(entry_query).order_by('-pub_date')
+        found_entries = Article.objects.filter(entry_query).order_by('-pub_date')
 
     context = {
         'query_string': query_string, 
