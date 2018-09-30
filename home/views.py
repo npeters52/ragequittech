@@ -48,7 +48,7 @@ def search(request):
     if article_query:
         article_queryset_list = article_queryset_list.filter(
             Q(content__icontains=article_query) |
-            Q(title__icontains=article_query)   |
+            Q(title__icontains=article_query)
             # Q(author__icontains=article_query)
         ).distinct()
 
