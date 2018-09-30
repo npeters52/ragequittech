@@ -46,7 +46,7 @@ def search(request):
     article_query = request.GET.get("q")
     article_queryset_list = Article.objects.all()
     if article_query:
-        article_queryset_list = queryset_list.filter(
+        article_queryset_list = article_queryset_list.filter(
             Q(content__icontains=article_query) |
             Q(title__icontains=article_query)   |
             Q(author__icontains=article_query)
