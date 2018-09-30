@@ -12,7 +12,7 @@
                 {% include "home/nav.html" %}
             </div>
             <div class="archive-splash">
-                <h1 class="theme-yellow text-center title-font blog-title">Blog Archive</h1>
+                <h1 class="theme-yellow text-center title-font blog-title">Search Articles</h1>
                 {% if archive_list %}
                 <div>
                     <ul class="blog-ul text-center">
@@ -20,7 +20,7 @@
                         <div  class="row theme-black">
                             <li>
                             <h1>
-                                {% comment %} <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} {% endcomment %}
+                                <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url article.id %}">{{ article.title }}
                             </h1>
                             <h4>
                                 <p class="theme-green title-font">
