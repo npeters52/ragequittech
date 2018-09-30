@@ -20,7 +20,7 @@
                         <div  class="row theme-black">
                             <li>
                             <h1 class="theme-green">
-                                {{ article.title }}
+                                <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }}
                             </h1>
                             <h4>
                                 <p class="theme-green title-font">
