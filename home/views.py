@@ -9,7 +9,6 @@ import datetime
 from django.shortcuts import render_to_response
 from django.contrib.postgres.search import SearchQuery, SearchRank, SearchVector
 from django.db.models import Q
-from blog.views import blogpost
 
 def home(request):
     latest_question_list = Question.objects.order_by('-created')[:2]
@@ -54,7 +53,6 @@ def search(request):
         ).distinct()
 
     context = {
-        "archive_list":article_query,
-        "blogpost":blogpost
+        "archive_list":article_query
     }
-    return render(request, 'blog/blog_archive.html', context)
+    return render(request, 'home/search_results.html', context)

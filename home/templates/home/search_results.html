@@ -1,19 +1,44 @@
-{% load static %}
-<html>
-    <head>
-        {% include "home/head.html" %}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
-    </head>
-    <body class="theme-black">
-        <div class="container-fluid">
-            <div class="full-width">
+{% load staticfiles %}
+
+<head>
+    {% include "home/head.html" %}
+    <link rel="stylesheet" type='text/css' href="{% static 'css/blog.css' %}">
+</head>
+
+<body class="theme-black">
+    <div class="container-fluid theme-black">
+        <div class="col-sm-12 theme-black padding-bottom">
+            <div>
                 {% include "home/nav.html" %}
             </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    {{% found_entries %}}
+            <div class="archive-splash">
+                <h1 class="theme-yellow text-center title-font blog-title">Blog Archive</h1>
+                {% if archive_list %}
+                <div>
+                    <ul class="blog-ul text-center">
+                        {% for article in archive_list %}
+                        <div  class="row theme-black">
+                            <li>
+                            <h1>
+                                {% comment %} <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} {% endcomment %}
+                            </h1>
+                            <h4>
+                                <p class="theme-green title-font">
+                                    {{article.pub_date}}
+                                </p>
+                            </h4>
+                            </li>
+                        </div>
+                        {% endfor %}
+                    </ul>
                 </div>
+                {% else %}
+                <p class="theme-white text-center"> No articles are available </p>
+                {% endif %}
             </div>
         </div>
-    </body>
-</html>
+    </div>
+    <div class="row text-center theme-white blog-archive-footer">
+        {% include "home/footer.html" %}
+    </div>
+</body>
