@@ -53,6 +53,6 @@ def search(request):
         ).distinct()
 
     context = {
-        "archive_list":article_query
+        "archive_list":article_queryset_list
     }
     return render(request, 'home/search_results.html', context)
