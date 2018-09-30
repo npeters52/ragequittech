@@ -8,6 +8,7 @@ from django.urls import reverse
 import datetime
 from django.shortcuts import render_to_response
 from django.contrib.postgres.search import SearchQuery, SearchRank, SearchVector
+from django.db.models import Q
 
 def home(request):
     latest_question_list = Question.objects.order_by('-created')[:2]
@@ -42,6 +43,16 @@ def home(request):
 #     return render(request, 'home/search_results.html', context)
 
 def search(request):
-    vector = SearchVector('content')
-    query = SearchQuery('q')
-    return render(request, 'home/search_results.html', context)
+    article_query = request.GET.get("q")
+    article_queryset_list = Article.objects.all()
+    if article_query:
+        article_queryset_list = queryset_list.filter(
+            Q(content__icontains=article_query) |
+            Q(title__icontains=article_query)   |
+            Q(author__icontains=article_query)
+        ).distinct()
+
+    context = {
+        "archive_list":
+    }
+    return render(request, 'blog/blog_archive.html', context)

@@ -20,8 +20,8 @@
         <a class="title-font nav-li nav-a" href="/podcast">Podcast</a>
         <a class="title-font nav-li nav-a" href="/blog">Blog</a>
         <div class="title-font nav-li search-container">
-          <form action="/search">
-            <input type="text" placeholder="Search.." name="search">
+          <form action="/search" method="GET">
+            <input type="text" id="q" placeholder="Search.." name="search" value='{{ request.GET.q }}'>
             <button type="submit"><i class="fa fa-search"></i></button>
           </form>
         </div>

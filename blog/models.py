@@ -13,7 +13,6 @@ class Article(models.Model):
     author = models.ForeignKey(User, null=True, blank=True, on_delete=models.CASCADE)
     content = models.CharField(max_length=10000)
     image = models.FileField(default=None)
-    author = models.ForeignKey(User, null=True, blank=True, on_delete=models.CASCADE)
     content = RichTextField()
     preview_image = models.FileField(null=True, blank=True)
 
