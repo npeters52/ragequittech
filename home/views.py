@@ -55,4 +55,4 @@ def search(request):
     context = {
         "archive_list":article_queryset_list
     }
-    return render(request, 'home/search_results.html', context)
+    return render(request, 'blog/blog_archive.html', context)
