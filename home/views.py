@@ -7,7 +7,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
 import datetime
 from django.shortcuts import render_to_response
-from django.contrib.postgres.search import SearchQuery, SearchRank, SearchVector
+from itertools import chain
 from django.db.models import Q
 
 def home(request):
@@ -43,16 +43,23 @@ def home(request):
 #     return render(request, 'home/search_results.html', context)
 
 def search(request):
-    article_query = request.GET.get("q")
+    query = request.GET.get("q")
+
     article_queryset_list = Article.objects.all()
-    if article_query:
-        article_queryset_list = article_queryset_list.filter(
-            Q(content__icontains=article_query) |
-            Q(title__icontains=article_query)
-            # Q(author__icontains=article_query)
+
+    podcast_queryset_list = Podcast.objects.all()
+
+    combined_queryset_list = sorted(
+        chain(article_queryset_list, podcast_queryset_list),
+        key=lambda post: post.pub_date, reverse=True)
+
+    if query:
+        combined_queryset_list = combined_queryset_list.filter(
+            Q(content__icontains=query) |
+            Q(title__icontains=query)
         ).distinct()
 
     context = {
-        "archive_list":article_queryset_list
+        "archive_list":combined_queryset_list
     }
     return render(request, 'blog/blog_archive.html', context)
