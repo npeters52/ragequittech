@@ -33,7 +33,7 @@
                     </ul>
                     <div class="row text-center">
                         {% if archive_list.has_next %}
-                            <li class="theme-green"><a href="?page={{ archive_list.next_page_number }}">&raquo;</a></li>
+                            <a class="theme-green" href="?page={{ archive_list.next_page_number }}">&raquo;</a></li>
                         {% else %}
                             <li class="disabled"><span>&raquo;</span></li>
                         {% endif %}
