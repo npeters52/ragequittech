@@ -7,7 +7,8 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
 import datetime
 from django.shortcuts import render_to_response
-from itertools import chain, operator
+from itertools import chain
+import operator
 from django.db.models import Q
 
 def home(request):
