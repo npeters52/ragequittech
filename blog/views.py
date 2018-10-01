@@ -9,11 +9,8 @@ from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 
 def articles(request):
     article_list = Article.objects.order_by('-pub_date')
-    paginator = Paginator(contact_list, 10)
-    page = request.GET.get('page')
-    paginated_articles = paginator.get_page(page)
     context = {
-        'article_list':paginated_articles
+        'article_list':article_list
     }
     return render(request, 'blog/blog_index.html', context)
 
@@ -23,7 +20,10 @@ def blogpost(request, article_id):
 
 def archive(request):
     archive_list = Article.objects.order_by('-pub_date')
+    paginator = Paginator(archive_list, 10)
+    page = request.GET.get('page')
+    paginated_articles = paginator.get_page(page)
     context = {
-        'archive_list':archive_list
+        'archive_list':paginated_articles
     }
     return render(request, 'blog/blog_archive.html', context)
