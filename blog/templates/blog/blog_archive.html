@@ -41,9 +41,11 @@
     <div class="row text-center theme-white blog-archive-footer">
             <div class="row text-center">
                     {% if archive_list.has_next %}
-                        <a class="theme-green next-icon" href="?page={{ archive_list.next_page_number }}">NEXT PAGE &raquo;</a></li>
-                    {% else %}
-                        <p class="disabled"><span>&raquo;</span></p>
+                        <a class="theme-green next-icon" href="?page={{ archive_list.next_page_number }}">NEXT PAGE &raquo;</a>
+                    {% if archive_list.has_previous %}
+                        <a class="theme-green next-icon" href="?page={{ archive_list.previous_page_number }}"">PREVIOUS PAGE</a>
+                    {% else %)
+                        <p></p>
                     {% endif %}
             </div>
         {% include "home/footer.html" %}
