@@ -7,7 +7,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
 import datetime
 from django.shortcuts import render_to_response
-from itertools import chain
+from itertools import chain, operator
 from django.db.models import Q
 
 def home(request):
@@ -54,10 +54,10 @@ def search(request):
         key=lambda post: post.pub_date, reverse=True)
 
     if query:
-        combined_queryset_list = combined_queryset_list.filter(
+        combined_queryset_list = sorted(combined_queryset_list, key=operator.attrgetter(
             Q(content__icontains=query) |
             Q(title__icontains=query)
-        ).distinct()
+        )).distinct()
 
     context = {
         "archive_list":combined_queryset_list
