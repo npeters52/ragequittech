@@ -50,9 +50,7 @@ def search(request):
 
     podcast_queryset_list = Podcast.objects.all()
 
-    combined_queryset_list = sorted(
-        chain(article_queryset_list, podcast_queryset_list),
-        key=lambda post: reverse=True)
+    combined_queryset_list = chain(article_queryset_list, podcast_queryset_list)
 
     if query:
         combined_queryset_list = sorted(combined_queryset_list, key=operator.attrgetter(
