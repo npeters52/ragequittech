@@ -43,7 +43,7 @@
                     {% if archive_list.has_next %}
                         <a class="theme-green next-icon" href="?page={{ archive_list.next_page_number }}">NEXT PAGE &raquo;</a></li>
                     {% else %}
-                        <li class="disabled"><span>&raquo;</span></li>
+                        <p class="disabled"><span>&raquo;</span></p>
                     {% endif %}
             </div>
         {% include "home/footer.html" %}
