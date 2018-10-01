@@ -10,6 +10,7 @@ from django.shortcuts import render_to_response
 from itertools import chain
 import operator
 from django.db.models import Q
+from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 
 def home(request):
     latest_question_list = Question.objects.order_by('-created')[:2]
