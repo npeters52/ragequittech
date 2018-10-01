@@ -22,7 +22,7 @@ def archive(request):
     archive_list = Article.objects.order_by('-pub_date')
     paginator = Paginator(archive_list, 10)
     page = request.GET.get('page')
-    paginated_articles = paginator.get_page(page)
+    paginated_articles = paginator.page(0)
     context = {
         'archive_list':paginated_articles
     }
