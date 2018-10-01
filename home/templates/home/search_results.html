@@ -19,14 +19,14 @@
                         {% for article in article_search_results %}
                         <div  class="row theme-black">
                             <li>
-                            <h1>
-                                <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ result.title }}
-                            </h1>
-                            <h4>
-                                <p class="theme-green title-font">
-                                    {{result.pub_date}}
-                                </p>
-                            </h4>
+                                <h1>
+                                    <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }}
+                                </h1>
+                                <h4>
+                                    <p class="theme-green title-font">
+                                        {{result.pub_date}}
+                                    </p>
+                                </h4>
                             </li>
                         </div>
                         {% endfor %}
