@@ -50,16 +50,16 @@ def search(request):
 
     podcast_queryset_list = Podcast.objects.all()
 
-    combined_queryset_list = sorted(
-        chain(article_queryset_list, podcast_queryset_list),
-        key=lambda post: post.pub_date, reverse=True)
-
-    if query:
-        combined_queryset_list = combined_queryset_list.filter(
+    if  query:
+        article_queryset_list = article_queryset_list.filter(
             Q(content__icontains=query) |
-            Q(title__icontains=query) |
+            Q(title__icontains=query)
+        ).distinct()
+        podcast_queryset_list = podcast_queryset_list.filter(
             Q(name__icontains=query)
         ).distinct()
+
+    combined_queryset_list = chain(article_queryset_list, podcast_queryset_list)
 
     context = {
         "archive_list":combined_queryset_list
