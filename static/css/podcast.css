@@ -93,6 +93,10 @@ a:hover {
   margin-top: 15%;
 }
 
+.pagination {
+  font-size: 30px;
+}
+
 @media screen and (max-width: 1370px) {
   .podcast-index-archive {
     padding-top: 400px;
