@@ -55,7 +55,7 @@ def search(request):
         key=lambda post: post.pub_date, reverse=True)
 
     if query:
-        combined_queryset_list = sorted(combined_queryset_list, key=operator.attrgetter(
+        combined_queryset_list = combined_queryset_list.filter(
             Q(content__icontains=query) |
             Q(title__icontains=query) |
             Q(name__icontains=query)
