@@ -40,7 +40,7 @@
                         {% for podcast in podcast_search_results %}
                         <div  class="row col-sm-12 podcast-block center theme-black">
                             <li>
-                              <h1>
+                              <h1 class="text-center">
                                 <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url 'podcast:podcast_detail' podcast.id %}">{{ podcast.name }}</a>
                               </h1>
                               <h4>
