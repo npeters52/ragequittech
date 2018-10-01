@@ -59,7 +59,7 @@ def search(request):
             Q(content__icontains=query) |
             Q(title__icontains=query) |
             Q(name__icontains=query)
-        )).distinct()
+        ).distinct()
 
     context = {
         "archive_list":combined_queryset_list
