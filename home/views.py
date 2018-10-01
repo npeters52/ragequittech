@@ -57,7 +57,8 @@ def search(request):
     if query:
         combined_queryset_list = sorted(combined_queryset_list, key=operator.attrgetter(
             Q(content__icontains=query) |
-            Q(title__icontains=query)
+            Q(title__icontains=query) |
+            Q(name__icontains=query)
         )).distinct()
 
     context = {
