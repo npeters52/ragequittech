@@ -21,8 +21,13 @@ def blogpost(request, article_id):
 def archive(request):
     archive_list = Article.objects.order_by('-pub_date')
     paginator = Paginator(archive_list, 10)
-    page = request.GET.get('page')
-    paginated_articles = paginator.page(1)
+    page = request.GET.get('page', 1)
+    try:
+        paginated_articles = paginator.page(page)
+    except PageNotAnInteger:
+        paginated_articles = paginator.page(1)
+    except EmptyPage:
+        paginated_articles = paginator.page(paginator.num_pages)
     context = {
         'archive_list':paginated_articles
     }
