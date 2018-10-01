@@ -46,7 +46,7 @@ def home(request):
 def search(request):
     query = request.GET.get("q")
 
-    article_queryset_list = Article.objects.all()
+    article_queryset_list = Article.objects.all() 
 
     podcast_queryset_list = Podcast.objects.all()
 
@@ -64,4 +64,4 @@ def search(request):
     context = {
         "archive_list":combined_queryset_list
     }
-    return render(request, 'blog/blog_archive.html', context)
+    return render(request, 'blog/search_results.html', context)
