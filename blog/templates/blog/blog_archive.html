@@ -42,12 +42,12 @@
             <div class="row text-center pagination">
                     {% if archive_list.has_previous %}
                         <a class="theme-green" href="?page={{ archive_list.previous_page_number }}">&laquo;</a>
-                    {% endif %}
                     <span class="current theme-green">
                         Page {{ archive_list.number }} of {{ archive_list.paginator.num_pages }}
                     </span>
                     {% elif archive_list.has_next %}
                         <a class="theme-green" href="?page={{ archive_list.next_page_number }}">&raquo;</a>
+                    {% endif %}
             </div>
         {% include "home/footer.html" %}
     </div>
