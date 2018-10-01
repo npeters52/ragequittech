@@ -13,18 +13,18 @@
             </div>
             <div class="archive-splash">
                 <h1 class="theme-yellow text-center title-font blog-title">Search Results</h1>
-                {% if archive_list %}
+                {% if search_results %}
                 <div>
                     <ul class="blog-ul text-center">
-                        {% for article in archive_list %}
+                        {% for result in search_results %}
                         <div  class="row theme-black">
                             <li>
                             <h1>
-                                <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }}
+                                <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ result.title }}
                             </h1>
                             <h4>
                                 <p class="theme-green title-font">
-                                    {{article.pub_date}}
+                                    {{result.pub_date}}
                                 </p>
                             </h4>
                             </li>

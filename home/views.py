@@ -62,6 +62,6 @@ def search(request):
     combined_queryset_list = chain(article_queryset_list, podcast_queryset_list)
 
     context = {
-        "archive_list":combined_queryset_list
+        "search_results":combined_queryset_list
     }
     return render(request, 'home/search_results.html', context)
