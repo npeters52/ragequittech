@@ -59,9 +59,8 @@ def search(request):
             Q(name__icontains=query)
         ).distinct()
 
-    combined_queryset_list = chain(article_queryset_list, podcast_queryset_list)
-
     context = {
-        "search_results":combined_queryset_list
+        "article_search_results":article_queryset_list,
+        "podcast_search_results":podcast_queryset_list
     }
     return render(request, 'home/search_results.html', context)

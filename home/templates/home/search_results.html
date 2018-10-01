@@ -13,10 +13,10 @@
             </div>
             <div class="archive-splash">
                 <h1 class="theme-yellow text-center title-font blog-title">Search Results</h1>
-                {% if search_results %}
+                {% if article_search_results %}
                 <div>
                     <ul class="blog-ul text-center">
-                        {% for result in search_results %}
+                        {% for article in article_search_results %}
                         <div  class="row theme-black">
                             <li>
                             <h1>
@@ -36,6 +36,28 @@
                 <p class="theme-white text-center"> No results found </p>
                 {% endif %}
             </div>
+            <!-- PODCAST START-->
+            {% if podcast_search_results %}
+                    <ul class="podcast-block img-responsive theme-black">
+                        {% for podcast in podcast_search_results %}
+                        <div  class="row col-sm-12 podcast-block center theme-black">
+                            <li>
+                              <h1>
+                                <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url 'podcast:podcast_detail' podcast.id %}">{{ podcast.name }}</a>
+                              </h1>
+                              <h4>
+                                  <p class="theme-green title-font">
+                                      {{podcast.pub_date}}
+                                  </p>
+                              </h4>
+                              <img class="resize" href="{% url 'podcast:podcast_detail' podcast.id %}" src="{{podcast.splash_image.url}}">
+                            </li>
+                        </div>
+                        {% endfor %}
+                    </ul>
+                    {% else %}
+                        <p>No podcasts are available</p>
+            {% endif %}
         </div>
     </div>
     <div class="row text-center theme-white blog-archive-footer">
