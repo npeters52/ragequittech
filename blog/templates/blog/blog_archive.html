@@ -31,13 +31,6 @@
                         </div>
                         {% endfor %}
                     </ul>
-                    <div class="row text-center">
-                        {% if archive_list.has_next %}
-                            <a class="theme-green next-icon" href="?page={{ archive_list.next_page_number }}">NEXT PAGE &raquo;</a></li>
-                        {% else %}
-                            <li class="disabled"><span>&raquo;</span></li>
-                        {% endif %}
-                    </div>
                 </div>
                 {% else %}
                 <p class="theme-white text-center"> No articles are available </p>
@@ -46,6 +39,13 @@
         </div>
     </div>
     <div class="row text-center theme-white blog-archive-footer">
+            <div class="row text-center">
+                    {% if archive_list.has_next %}
+                        <a class="theme-green next-icon" href="?page={{ archive_list.next_page_number }}">NEXT PAGE &raquo;</a></li>
+                    {% else %}
+                        <li class="disabled"><span>&raquo;</span></li>
+                    {% endif %}
+            </div>
         {% include "home/footer.html" %}
     </div>
 </body>
