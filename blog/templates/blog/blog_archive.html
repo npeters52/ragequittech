@@ -39,14 +39,14 @@
         </div>
     </div>
     <div class="row text-center theme-white blog-archive-footer">
-            <div class="row text-center">
+            <div class="row text-center pagination">
                     <span class="current theme-green">
                         Page {{ archive_list.number }} of {{ archive_list.paginator.num_pages }}.
                     </span>
                     {% if archive_list.has_next %}
-                        <a class="theme-green next-icon" href="?page={{ archive_list.next_page_number }}">&raquo;</a>
+                        <a class="theme-green" href="?page={{ archive_list.next_page_number }}">&raquo;</a>
                     {% elif archive_list.has_previous %}
-                        <a class="theme-green next-icon" href="?page={{ archive_list.previous_page_number }}">&laquo;</a>
+                        <a class="theme-green" href="?page={{ archive_list.previous_page_number }}">&laquo;</a>
                     {% endif %}
             </div>
         {% include "home/footer.html" %}

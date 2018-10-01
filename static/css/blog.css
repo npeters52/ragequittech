@@ -117,8 +117,8 @@ a:hover {
   margin-top: 15%;
 }
 
-.next-icon {
-  
+.pagination {
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1370px) {
