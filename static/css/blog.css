@@ -117,6 +117,10 @@ a:hover {
   margin-top: 15%;
 }
 
+.next-icon {
+  font-size: 40px;
+}
+
 @media screen and (max-width: 1370px) {
   .archive-splash {
     padding-top: 500px;
