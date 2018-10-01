@@ -44,9 +44,9 @@
                         Page {{ archive_list.number }} of {{ archive_list.paginator.num_pages }}.
                     </span>
                     {% if archive_list.has_next %}
-                        <a class="theme-green next-icon" href="?page={{ archive_list.next_page_number }}">NEXT PAGE &raquo;</a>
+                        <a class="theme-green next-icon" href="?page={{ archive_list.next_page_number }}">&raquo;</a>
                     {% elif archive_list.has_previous %}
-                        <a class="theme-green next-icon" href="?page={{ archive_list.previous_page_number }}">PREVIOUS PAGE</a>
+                        <a class="theme-green next-icon" href="?page={{ archive_list.previous_page_number }}">&laquo;</a>
                     {% endif %}
             </div>
         {% include "home/footer.html" %}
