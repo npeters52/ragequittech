@@ -52,7 +52,7 @@ def search(request):
 
     combined_queryset_list = sorted(
         chain(article_queryset_list, podcast_queryset_list),
-        key=lambda post: post.pub_date, reverse=True)
+        key=lambda post: reverse=True)
 
     if query:
         combined_queryset_list = sorted(combined_queryset_list, key=operator.attrgetter(
