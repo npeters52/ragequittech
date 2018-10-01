@@ -3,7 +3,6 @@
 <head>
     {% include "home/head.html" %}
     <link rel="stylesheet" type='text/css' href="{% static 'css/blog.css' %}">
-    <link rel="stylesheet" type='text/css' href="{% static 'css/podcast.css' %}">
 </head>
 
 <body class="theme-black">
@@ -34,10 +33,11 @@
                     </ul>
                 </div>
                 {% else %}
-                <p class="theme-white text-center"> No results found </p>
+                <p class="theme-white text-center"> No articles found </p>
                 {% endif %}
             </div>
             <!-- PODCAST START-->
+            <div class="col-sm-12 archive-splash">
             {% if podcast_search_results %}
                     <ul class="podcast-block img-responsive theme-black">
                         {% for podcast in podcast_search_results %}
@@ -56,8 +56,9 @@
                         {% endfor %}
                     </ul>
                     {% else %}
-                        <p>No podcasts are available</p>
+                        <p>No podcasts found </p>
             {% endif %}
+        </div>
         </div>
     </div>
     <div class="row text-center theme-white blog-archive-footer">
