@@ -33,12 +33,9 @@
                     </ul>
                 </div>
                 {% else %}
-                <p class="theme-white text-center"> No articles found </p>
+                <p class="theme-white text-center"> No results found </p>
                 {% endif %}
-            </div>
-            <!-- PODCAST START-->
-            <div class="col-sm-12 archive-splash">
-            {% if podcast_search_results %}
+                {% if podcast_search_results %}
                     <ul class="podcast-block img-responsive theme-black">
                         {% for podcast in podcast_search_results %}
                         <div  class="row col-sm-12 podcast-block center theme-black">
@@ -56,9 +53,9 @@
                         {% endfor %}
                     </ul>
                     {% else %}
-                        <p>No podcasts found </p>
-            {% endif %}
-        </div>
+                        <p>No podcasts are available</p>
+                {% endif %}
+            </div>
         </div>
     </div>
     <div class="row text-center theme-white blog-archive-footer">
