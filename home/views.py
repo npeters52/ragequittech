@@ -44,22 +44,21 @@ def home(request):
 #     return render(request, 'home/search_results.html', context)
 
 def search(request):
+    
     query = request.GET.get("q")
 
-    article_queryset_list = Article.objects.all() 
+    article_queryset_list = Article.objects.all()
 
     podcast_queryset_list = Podcast.objects.all()
 
-    if  query:
-        article_queryset_list = article_queryset_list.filter(
+    combined_queryset_list = chain(article_queryset_list, podcast_queryset_list)
+        
+    if query:
+        combined_queryset_list = combined_queryset_list.filter(
             Q(content__icontains=query) |
-            Q(title__icontains=query)
-        ).distinct()
-        podcast_queryset_list = podcast_queryset_list.filter(
+            Q(title__icontains=query) |
             Q(name__icontains=query)
         ).distinct()
-
-    combined_queryset_list = chain(article_queryset_list, podcast_queryset_list)
 
     context = {
         "search_results":combined_queryset_list
