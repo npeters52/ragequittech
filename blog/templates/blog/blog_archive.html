@@ -5,25 +5,25 @@
     <link rel="stylesheet" type='text/css' href="{% static 'css/blog.css' %}">
 </head>
 
-<body class="theme-black">
-    <div class="container-fluid theme-black">
-        <div class="col-sm-12 theme-black padding-bottom">
+<body class="background-white">
+    <div class="container-fluid background-white">
+        <div class="col-sm-12 background-white padding-bottom">
             <div>
                 {% include "home/nav.html" %}
             </div>
             <div class="archive-splash">
-                <h1 class="theme-yellow text-center title-font blog-title">Blog Archive</h1>
+                <h1 class="color-black text-center title-font blog-title">Blog Archive</h1>
                 {% if archive_list %}
                 <div>
                     <ul class="blog-ul text-center">
                         {% for article in archive_list %}
-                        <div  class="row theme-black">
+                        <div  class="row background-white">
                             <li>
                             <h1>
-                                <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }}</a>
+                                <a class="color-black title-font top-article-title" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }}</a>
                             </h1>
                             <h4>
-                                <p class="theme-green title-font">
+                                <p class="color-black title-font">
                                     {{article.pub_date}}
                                 </p>
                             </h4>
@@ -41,13 +41,13 @@
     <div class="row text-center theme-white blog-archive-footer">
             <div class="row text-center pagination">
                     {% if archive_list.has_previous %}
-                        <a class="theme-green" href="?page={{ archive_list.previous_page_number }}">&laquo;</a>
+                        <a class="color-black" href="?page={{ archive_list.previous_page_number }}">&laquo;</a>
                     {% endif %}
-                    <span class="current theme-green">
+                    <span class="current color-black">
                         Page {{ archive_list.number }} of {{ archive_list.paginator.num_pages }}
                     </span>
                     {% if archive_list.has_next %}
-                        <a class="theme-green" href="?page={{ archive_list.next_page_number }}">&raquo;</a>
+                        <a class="color-black" href="?page={{ archive_list.next_page_number }}">&raquo;</a>
                     {% endif %}
             </div>
         {% include "home/footer.html" %}
