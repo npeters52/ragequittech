@@ -5,9 +5,9 @@
     <link rel="stylesheet" type='text/css' href="{% static 'css/blog.css' %}">
 </head>
 
-<body class="theme-black">
-    <div class="container-fluid theme-black">
-        <div class="col-sm-12 theme-black padding-bottom">
+<body class="theme-white">
+    <div class="container-fluid theme-white">
+        <div class="col-sm-12 theme-white padding-bottom">
             <div>
                 {% include "home/nav.html" %}
             </div>
@@ -17,7 +17,7 @@
                 <div>
                     <ul class="blog-ul text-center">
                         {% for article in article_search_results %}
-                        <div  class="row theme-black">
+                        <div  class="row theme-white">
                             <li>
                                 <h1>
                                     <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }}</a>
@@ -36,9 +36,9 @@
                 <p class="theme-white text-center"> No articles found </p>
                 {% endif %}
                 {% if podcast_search_results %}
-                    <ul class="podcast-block img-responsive theme-black">
+                    <ul class="podcast-block img-responsive theme-white">
                         {% for podcast in podcast_search_results %}
-                        <div  class="row col-sm-12 podcast-block center theme-black">
+                        <div  class="row col-sm-12 podcast-block center theme-white">
                             <li>
                               <h1 class="text-center">
                                 <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url 'podcast:podcast_detail' podcast.id %}">{{ podcast.name }}</a>
