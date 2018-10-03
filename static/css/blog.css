@@ -48,10 +48,6 @@ a:hover {
   padding-top: 12%;
 }
 
-.blog-sidebar-background-image {
-  background-image: url({{article.preview_image.url}});
-}
-
 .blog-content {
   margin-left: 190px !important;
   margin-right: 150px !important;
