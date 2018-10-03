@@ -15,7 +15,7 @@
                 <h1 class="text-center title-font podcast-title">Podcast Archive</h1>
                 <div class="podcast-header text-center">
                     <h1>
-                        <a class="theme-green title-font" href="https://www.youtube.com/channel/UCqoLuruSGXpTlHLOzh_h1Ew">Check out our Channel</a>
+                        <a class="title-font" href="https://www.youtube.com/channel/UCqoLuruSGXpTlHLOzh_h1Ew">Check out our Channel</a>
                     </h1>
                 </div>
                 <div>
@@ -25,10 +25,10 @@
                         <div  class="row col-sm-12 podcast-block center">
                             <li>
                               <h1>
-                                <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url 'podcast:podcast_detail' podcast.id %}">{{ podcast.name }}</a>
+                                <a class="title-font top-article-title" style="text-decoration:none" href="{% url 'podcast:podcast_detail' podcast.id %}">{{ podcast.name }}</a>
                               </h1>
                               <h4>
-                                  <p class="theme-green title-font">
+                                  <p class="title-font">
                                       {{podcast.pub_date}}
                                   </p>
                               </h4>
