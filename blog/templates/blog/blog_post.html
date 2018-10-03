@@ -5,9 +5,9 @@
   <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}"/>
 </head>
 
-<body class="theme-black">
-    <div class="container-fluid theme-black">
-        <div class="row col-sm-12 theme-black full">
+<body class="background-white">
+    <div class="container-fluid background-white">
+        <div class="row col-sm-12 background-white full">
             <div>
                 {% include "home/nav.html" %}
             </div>
@@ -20,7 +20,7 @@
                     <h3>by: {{article.author}}</h3>
                     <h4>{{article.pub_date}}</h4>
                 </div>
-                <div class="row blog-content theme-white">
+                <div class="row blog-content color-black">
                 {{article.content|safe}}
                 </div>
                 <div class="row text-center theme-white blog-detail-footer">
