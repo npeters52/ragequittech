@@ -31,7 +31,7 @@
                 {% for article in article_list %}
                 <div  class="row jumbotron jumbotron-fluid text-center">
                     <li>
-                        <a class="color-black article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
+                        <a class="color-black title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
                     </li>
                 </div>
                 {% endfor %}
