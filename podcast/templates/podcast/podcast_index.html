@@ -5,13 +5,13 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/podcast.css' %}">
 </head>
 
-<body class="full theme-black">
+<body class="full">
     <div class="container-fluid">
         <div class="col-sm-12 podcast-archive-splash">
             <div>
                 {% include "home/nav.html" %}
             </div>
-            <div class="text-center theme-black podcast-index-archive">
+            <div class="text-center podcast-index-archive">
                 <h1 class="theme-yellow text-center title-font podcast-title">Podcast Archive</h1>
                 <div class="podcast-header text-center">
                     <h1>
@@ -20,9 +20,9 @@
                 </div>
                 <div>
                     {% if podcast_archive_list %}
-                    <ul class="podcast-block img-responsive theme-black">
+                    <ul class="podcast-block img-responsive">
                         {% for podcast in podcast_archive_list %}
-                        <div  class="row col-sm-12 podcast-block center theme-black">
+                        <div  class="row col-sm-12 podcast-block center">
                             <li>
                               <h1>
                                 <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url 'podcast:podcast_detail' podcast.id %}">{{ podcast.name }}</a>
