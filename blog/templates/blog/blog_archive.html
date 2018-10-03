@@ -41,13 +41,13 @@
     <div class="row text-center theme-white blog-archive-footer">
             <div class="row text-center pagination">
                     {% if archive_list.has_previous %}
-                        <a class="color-black" href="?page={{ archive_list.previous_page_number }}">&laquo;</a>
+                        <a class="color-black title-font" href="?page={{ archive_list.previous_page_number }}">&laquo;</a>
                     {% endif %}
-                    <span class="current color-black">
+                    <span class="current color-black title-font">
                         Page {{ archive_list.number }} of {{ archive_list.paginator.num_pages }}
                     </span>
                     {% if archive_list.has_next %}
-                        <a class="color-black" href="?page={{ archive_list.next_page_number }}">&raquo;</a>
+                        <a class="color-black title-font" href="?page={{ archive_list.next_page_number }}">&raquo;</a>
                     {% endif %}
             </div>
         {% include "home/footer.html" %}
