@@ -103,7 +103,7 @@
   .topnav .search-container {
     float: right;
     margin-right: 2%;
-    margin-top: 1%;
+    margin-top: .5%;
   }
   
   .topnav input[type=text] {
