@@ -59,6 +59,10 @@
     background-color: white;
 }
 
+.color-black {
+    color: black;
+}
+
 @media screen and (max-width: 1370px) {
     .home-splash {
       padding-top: 400px;
