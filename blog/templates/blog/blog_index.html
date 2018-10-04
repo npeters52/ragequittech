@@ -30,18 +30,20 @@
             <ul class="blog-ul">
                 {% for article in article_list %}
                 <div  class="row jumbotron jumbotron-fluid text-center">
+                    {% if article.preview_image %}
                     <li>
-                        {% if article.preview_image %}
-                          <style>
-                              .blog-sidebar-background-image {
-                                background-image: url({{article.preview_image.url}});
-                              }
-                          </style>
-                          <a class="color-black title-font article-list blog-sidebar-background-image" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
-                        {% else %}
-                          <a class="color-black title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
-                        {% endif %}
+                        <style>
+                            .blog-sidebar-background-image {
+                              background-image: url({{article.preview_image.url}});
+                            }
+                        </style>
+                        <a class="color-black title-font article-list blog-sidebar-background-image" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
                     </li>
+                  {% else %}
+                    <li>
+                        <a class="color-black title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
+                    </li>
+                  {% endif %}
                 </div>
                 {% endfor %}
             </ul>
