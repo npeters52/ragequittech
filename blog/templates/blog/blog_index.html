@@ -29,12 +29,12 @@
           <div class="col-sm-4 blog-sidebar">
             <ul class="blog-ul">
                 {% for article in article_list %}
+                {% if article.preview_image %}
                 <style>
                     .blog-sidebar-background-image {
                       background-image: url({{article.preview_image.url}});
                     }
                 </style>
-                {% if article.preview_image %}
                 <div  class="row jumbotron jumbotron-fluid text-center blog-sidebar-background-image"> 
                     <li class="blog-sidebar-background-image">
                         <a class="color-black title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
