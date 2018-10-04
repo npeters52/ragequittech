@@ -31,16 +31,9 @@
                 {% for article in article_list %}
                   {% if article.preview_image %}
                   <div  class="row jumbotron jumbotron-fluid text-center"> 
-                      <style>
-                          .blog-sidebar-background-image {
-                            background-image: url({{article.preview_image.url}});
-                          }
-                      </style>
-                      <div class="blog-sidebar-background-image">
                         <li>
                             <a class="color-black title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
                         </li>
-                      </div>
                   </div>
                   {% else %}
                   <div  class="row jumbotron jumbotron-fluid text-center">
