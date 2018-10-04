@@ -30,7 +30,7 @@
             <ul class="blog-ul">
                 {% for article in article_list %}
                   {% if article.preview_image %}
-                  <div  class="row jumbotron jumbotron-fluid text-center"> 
+                  <div style="background-image: url({{article.preview_image.url}});" class="row jumbotron jumbotron-fluid text-center"> 
                         <li>
                             <a class="color-black title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
                         </li>
