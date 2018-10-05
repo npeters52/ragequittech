@@ -33,7 +33,7 @@
                   {% comment %} <div style="background-image: url({{article.preview_image.url}});" class="row jumbotron jumbotron-fluid text-center"> 
                   </div> {% endcomment %}
                   <div class="blog-sidebar-item">
-                    <img src="{{article.preview_image.url}}" class="rounded float-left home-img-resize" alt="article.title">
+                    <img src="{{article.preview_image.url}}" class="rounded mx-auto d-block home-img-resize" alt="article.title">
                     <li>
                         <a class="color-black title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
                     </li>
