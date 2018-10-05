@@ -81,7 +81,7 @@ a:hover {
 .blog-sidebar-item {
   height: 150px;
   width: 150px;
-  margin: auto;
+  padding: auto;
   float: left;
 }
 
