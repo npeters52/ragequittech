@@ -71,6 +71,7 @@ a:hover {
 .blog-ul {
   list-style: none;
   margin-top: 5%;
+  padding-bottom: 15%;
 }
 
 .home-img-resize {
@@ -83,7 +84,7 @@ a:hover {
   width: 150px;
   float: left;
   margin-right: 5%;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 .resize {
