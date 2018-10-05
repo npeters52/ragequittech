@@ -73,6 +73,11 @@ a:hover {
   margin-top: 5%;
 }
 
+.home-img-resize {
+  max-width:100%;
+  max-height:100%;
+}
+
 .resize {
   width: 100%;
   height: 100%;
