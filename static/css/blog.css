@@ -75,7 +75,7 @@ a:hover {
 }
 
 .home-img-resize {
-  max-width:100%;
+  max-width:100% !important;
   max-height:100%;
 }
 
