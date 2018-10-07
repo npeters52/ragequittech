@@ -24,9 +24,11 @@
                 {% else %}
                   <p>No preview image available</p>
                 {% endif %}
-                <p class="color-black">
-                    {{ article.content|striptags|truncatewords:50 }}
-                </p>
+                <div class="row top-article-text">
+                    <p class="color-black">
+                        {{ article.content|striptags|truncatewords:50 }}
+                    </p>
+                </div>
               {% endfor %}
           </div>
           <div class="col-sm-8 blog-sidebar">
