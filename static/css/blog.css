@@ -80,8 +80,8 @@ a:hover {
 }
 
 .blog-sidebar-item {
-  height: 300px;
-  width: 300px;
+  height: 100px;
+  width: 100px;
   float: right !important;
   margin-right: 5%;
   margin-bottom: 5%;
