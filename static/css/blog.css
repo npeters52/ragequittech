@@ -80,7 +80,8 @@ a:hover {
 }
 
 .top-article-text {
-  margin-top: 40px;
+   display: block;
+   margin-top: 15%;
 }
 
 .blog-sidebar-item {
