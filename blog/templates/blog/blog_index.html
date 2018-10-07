@@ -37,8 +37,8 @@
                     <li>
                         <a class="color-black title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
                     </li>
-                    <li>
-                      <p class="blog-preview-text color-black">
+                    <li class="blog-preview-text">
+                      <p class="color-black">
                         {{ article.content|striptags|truncatewords:30 }}
                       </p>
                     </li>
@@ -47,6 +47,11 @@
                   <div  class="row jumbotron jumbotron-fluid text-center">
                       <li>
                           <a class="color-black title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
+                      </li>
+                      <li class="blog-preview-text">
+                          <p class="blog-preview-text color-black">
+                            {{ article.content|striptags|truncatewords:30 }}
+                          </p>
                       </li>
                   </div>
                   {% endif %}

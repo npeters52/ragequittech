@@ -143,6 +143,10 @@ a:hover {
   color: black;
 }
 
+.blog-preview-text {
+  margin-bottom: 15%;
+}
+
 .background-white {
   background-color: white;
 }
