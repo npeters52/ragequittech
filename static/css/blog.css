@@ -82,7 +82,7 @@ a:hover {
 .blog-sidebar-item {
   height: 300px;
   width: 300px;
-  float: right;
+  float: right !important;
   margin-right: 5%;
   margin-bottom: 5%;
 }
