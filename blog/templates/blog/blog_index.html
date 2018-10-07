@@ -39,7 +39,7 @@
                     </li>
                     <li>
                       <p class="blog-preview-text color-black">
-                        {{ article.content|truncatewords_html:5 }}
+                        {{ article.content|striptags|truncatewords:5 }}
                       </p>
                     </li>
                   </div>
