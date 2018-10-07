@@ -84,7 +84,7 @@ a:hover {
   width: 200px;
   float: right !important;
   margin-right: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
 }
 
 .resize {
@@ -143,9 +143,6 @@ a:hover {
   color: black;
 }
 
-.blog-preview-text {
-  margin-bottom: 15%;
-}
 
 .background-white {
   background-color: white;
