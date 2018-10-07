@@ -39,7 +39,7 @@
                     </li>
                     <li>
                       <p class="blog-preview-text color-black">
-                        {{ article.content|force_escape|truncatechars:75 }}
+                        {{ article.content|safe }}
                       </p>
                     </li>
                   </div>
