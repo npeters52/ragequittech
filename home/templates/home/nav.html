@@ -16,26 +16,32 @@
             {% comment %} <button type="submit"><i class="fa fa-search"></i></button> {% endcomment %}
           </form>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="navResponsive()">
             <i class="fa fa-bars"></i>
+        </a>
+        <a href="javascript:void(0);" class="icon" onclick="searchResponsive()">
+          <i class="glyphicon glyphicon-search"></i>
         </a>
 </div>
 
 
 <script>
   /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-  function myFunction() {
+  function navResponsive() {
     var x = document.getElementById("myTopnav");
-    var y = document.getElementById("search");
     if (x.className === "topnav") {
         x.className += " responsive";
     } else {
         x.className = "topnav";
     }
+  } 
+
+  function searchResponsive() {
+    var y = document.getElementById("search");
     if (y.className === "search-container") {
-      y.className += " responsive";
+      y.className += " search-icon";
     } else {
       y.className = "search-container";
     }
-  } 
+  }
 </script>
