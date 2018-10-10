@@ -10,7 +10,7 @@
         <a class="title-font nav-li nav-a" href="https://twitter.com/ThoughtCosmona1">Stream of Thought</a>
         <a class="title-font nav-li nav-a" href="/podcast">Podcast</a>
         <a class="title-font nav-li nav-a" href="/blog">Blog</a>
-        <div class="title-font nav-li search-container color-black">
+        <div class="title-font nav-li search-container color-black" id="search">
           <form action="/search" method="GET">
             <input type="text" class="form-control" name="q" placeholder="Search..." name="search" value='{{ request.GET.q }}'>
             {% comment %} <button type="submit"><i class="fa fa-search"></i></button> {% endcomment %}
@@ -26,10 +26,16 @@
   /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
   function myFunction() {
     var x = document.getElementById("myTopnav");
+    var y = document.getElementById("search");
     if (x.className === "topnav") {
         x.className += " responsive";
     } else {
         x.className = "topnav";
+    }
+    if (y.className === "search-container") {
+      y.className += " responsive";
+    } else {
+      y.className = "search-container";
     }
   } 
 </script>
