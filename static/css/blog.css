@@ -153,8 +153,20 @@ a:hover {
   background-color: white;
 }
 
+.display-block {
+  display: block;
+}
+
+/* Responsive Media Queries */
+
 @media screen and (max-width: 1370px) {
   .archive-splash {
     padding-top: 500px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .blog-splash {
+    
   }
 }

@@ -11,6 +11,7 @@
         {% if article_list %}
         <div class="blog-list">
           <div class="col-sm-4 top-article">
+            <!-- START TOP ARTICLE -->
               {% for article in top_article %}
               <div class="row">
                 <h3>
@@ -30,37 +31,38 @@
                     </p>
                 </div>
               {% endfor %}
+              <!-- END TOP ARTICLE -->
           </div>
           <div class="col-sm-8 blog-sidebar">
             <ul class="blog-ul">
+              <!-- ARTICLE LIST START -->
                 {% for article in article_list %}
                   {% if article.preview_image %}
-                  {% comment %} <div style="background-image: url({{article.preview_image.url}});" class="row jumbotron jumbotron-fluid text-center"> 
-                  </div> {% endcomment %}
-                  <div class="col-sm-4 blog-sidebar-item">
-                    <img src="{{article.preview_image.url}}" class="rounded home-img-resize" alt="article.title">
-                    <li>
-                        <a class="color-black title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
-                    </li>
-                    <li>
-                      <p class="color-black">
-                        {{ article.content|striptags|truncatewords:50 }}
-                      </p>
-                    </li>
-                  </div>
-                  {% else %}
-                  <div  class="row jumbotron jumbotron-fluid text-center">
+                    <div class="col-sm-4 blog-sidebar-item display-block">
+                      <img src="{{article.preview_image.url}}" class="rounded home-img-resize" alt="article.title">
                       <li>
                           <a class="color-black title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
                       </li>
                       <li>
-                          <p class="blog-preview-text color-black">
-                            {{ article.content|striptags|truncatewords:50 }}
-                          </p>
+                        <p class="color-black">
+                          {{ article.content|striptags|truncatewords:50 }}
+                        </p>
                       </li>
-                  </div>
+                    </div>
+                    {% else %}
+                    <div  class="row jumbotron jumbotron-fluid text-center">
+                        <li>
+                            <a class="color-black title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
+                        </li>
+                        <li>
+                            <p class="blog-preview-text color-black">
+                              {{ article.content|striptags|truncatewords:50 }}
+                            </p>
+                        </li>
+                    </div>
                   {% endif %}
                 {% endfor %}
+                <!-- ARTICLE LIST END -->
             </ul>
           </div>
         </div>

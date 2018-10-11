@@ -63,7 +63,9 @@
     color: black;
 }
 
-@media screen and (max-width: 1370px) {
+/* Responsive Media Queries */
+
+@media screen and (max-width: 1280px) {
     .home-splash {
       
     }
