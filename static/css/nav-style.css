@@ -170,7 +170,11 @@
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
+    top: 0;}
+  .search-icon {
+    right: 0;
     top: 0;
+    }
   }
   .topnav.responsive a {
     float: none;
