@@ -19,7 +19,7 @@
         <a href="javascript:void(0);" class="icon" onclick="navResponsive()">
             <i class="fa fa-bars"></i>
         </a>
-        <a href="javascript:void(0);" class="search-icon" onclick="searchResponsive()">
+        <a href="javascript:void(0);" class="search-icon" id="searchIcon" onclick="searchResponsive()">
           <i id="searchImage" class="glyphicon glyphicon-search"></i>
         </a>
 </div>
@@ -30,10 +30,10 @@
   function navResponsive() {
     var x = document.getElementById("myTopnav");
     var y = document.getElementById("search");
-    var w = document.getElementsByClassName("search-icon");
+    var w = document.getElementById("searchIcon");
     if (x.className === "topnav") {
         x.className += " responsive";
-        w.className += "responsive";
+        w.className += " responsive";
     } else {
         x.className = "topnav";
         y.className = "search-container";
