@@ -158,6 +158,17 @@
     float: right;
     display: block;
   }
+  .search-icon {
+    right: 0;
+    top: 0;
+    float: right;
+    }
+  .search-container.search-icon {
+    float: none;
+    display: block;
+    text-align: left;
+    margin-right: 5%;
+  }
 }
 
 @media screen and (max-width: 1275px) {
@@ -171,20 +182,9 @@
     position: absolute;
     right: 0;
     top: 0;}
-  .search-icon {
-    right: 0;
-    top: 0;
-    float: right;
-    }
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
-  }
-  .search-container.search-icon {
-    float: none;
-    display: block;
-    text-align: left;
-    margin-right: 5%;
   }
 } 
