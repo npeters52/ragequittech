@@ -158,17 +158,6 @@
     float: right;
     display: block;
   }
-  .search-icon {
-    right: 0;
-    top: 0;
-    float: right;
-    }
-  .search-container.search-icon {
-    float: none;
-    display: block;
-    text-align: left;
-    margin-right: 5%;
-  }
 }
 
 @media screen and (max-width: 1275px) {
@@ -186,5 +175,11 @@
     float: none;
     display: block;
     text-align: left;
+  }
+  .search-container.search-icon {
+    float: none;
+    display: block;
+    text-align: left;
+    margin-right: 5%;
   }
 } 
