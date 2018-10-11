@@ -169,5 +169,6 @@ a:hover {
 @media screen and (max-width: 1280px) {
   .blog-sidebar-item {
     height: 15%;
+    overflow: hidden;
   }
 }
