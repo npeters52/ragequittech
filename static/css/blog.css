@@ -167,7 +167,7 @@ a:hover {
 }
 
 @media screen and (max-width: 1280px) {
-  .blog-splash {
-    
+  .blog-sidebar-item {
+    height: 15%;
   }
 }
