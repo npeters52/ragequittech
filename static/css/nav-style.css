@@ -162,7 +162,7 @@
     float: left;
     }
     .search-icon.responsive {
-      display: block;
+      display: block !important;
     }
   .topnav.responsive a {
     float: none;
