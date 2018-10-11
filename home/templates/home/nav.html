@@ -10,7 +10,7 @@
         <a class="title-font nav-li nav-a" href="https://twitter.com/ThoughtCosmona1">Stream of Thought</a>
         <a class="title-font nav-li nav-a" href="/podcast">Podcast</a>
         <a class="title-font nav-li nav-a" href="/blog">Blog</a>
-        <div class="title-font nav-li search-container color-black" id="search">
+        <div class="title-font nav-li search-base search-container color-black" id="search">
           <form action="/search" method="GET">
             <input type="text" class="form-control" name="q" placeholder="Search..." name="search" value='{{ request.GET.q }}'>
             {% comment %} <button type="submit"><i class="fa fa-search"></i></button> {% endcomment %}
@@ -40,10 +40,10 @@
 
   function searchResponsive() {
     var y = document.getElementById("search");
-    if (y.className === "search-icon") {
+    if (y.className === "search-base") {
       y.className += " search-container";
     } else {
-      y.className = "search-container";
+      y.className = "search-base";
     }
   }
 </script>
