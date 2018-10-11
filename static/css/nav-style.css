@@ -149,6 +149,7 @@
   .search-container {display: none;}
   .search-icon {
     display: block !important;
+    float: right;
   }
 }
 
