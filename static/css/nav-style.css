@@ -171,6 +171,11 @@
     position: absolute;
     right: 0;
     top: 0;}
+  .search-icon {
+    right: 0;
+    top: 0;
+    float: left;
+    }
   .topnav.responsive a {
     float: none;
     display: block;
