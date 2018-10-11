@@ -137,7 +137,7 @@
 }
 
  /* When the screen is less than 1275 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
- @media screen and (max-width: 1275px) {
+ @media screen and (max-width: 1270px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -145,12 +145,12 @@
   }
 }
 
-@media screen and (max-width: 1275px) {
+@media screen and (max-width: 1270px) {
   .search-container {display: none;}
 }
 
 /* The "responsive" and search-icon class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 1275px) {
+@media screen and (max-width: 1270px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
