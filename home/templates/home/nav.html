@@ -10,17 +10,17 @@
         <a class="title-font nav-li nav-a" href="https://twitter.com/ThoughtCosmona1">Stream of Thought</a>
         <a class="title-font nav-li nav-a" href="/podcast">Podcast</a>
         <a class="title-font nav-li nav-a" href="/blog">Blog</a>
+        <!--search-->
         <div class="title-font nav-li search-base search-container color-black" id="search">
           <form action="/search" method="GET">
             <input type="text" class="form-control" name="q" placeholder="Search..." name="search" value='{{ request.GET.q }}'>
-            {% comment %} <button type="submit"><i class="fa fa-search"></i></button> {% endcomment %}
           </form>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="navResponsive()">
             <i class="fa fa-bars"></i>
         </a>
         <a href="javascript:void(0);" class="search-icon" onclick="searchResponsive()">
-          <i class="glyphicon glyphicon-search"></i>
+          <i id="searchImage" class="glyphicon glyphicon-search"></i>
         </a>
 </div>
 
@@ -40,10 +40,16 @@
 
   function searchResponsive() {
     var y = document.getElementById("search");
+    var z = document.getElementById("searchImage")
     if (y.className === "search-base") {
       y.className += " search-container";
     } else {
       y.className = "search-base";
+    }
+    if (z.className === "glyphicon glyphicon-search") {
+      z.className = "glyphicon glyphicon-remove";
+    } else {
+      z.className = "glyphicon glyphicon-search"
     }
   }
 </script>
