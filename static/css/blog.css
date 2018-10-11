@@ -155,6 +155,7 @@ a:hover {
 
 .display-block {
   display: block;
+  max-height: 100%;
 }
 
 /* Responsive Media Queries */
