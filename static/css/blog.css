@@ -82,6 +82,7 @@ a:hover {
 .top-article-text {
    display: block;
    margin-top: 70%;
+   font-size: 16px;
 }
 
 .blog-sidebar-item {
@@ -156,6 +157,10 @@ a:hover {
 .display-block {
   display: block;
   max-height: 100%;
+}
+
+.blog-preview-text {
+  font-size: 16px;
 }
 
 /* Responsive Media Queries */
