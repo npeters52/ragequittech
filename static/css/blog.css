@@ -174,7 +174,7 @@ a:hover {
 
 @media screen and (max-width: 1280px) {
   .blog-sidebar-item {
-    overflow: hidden;
+    
   }
   .top-article-text {
     display: none !important;
