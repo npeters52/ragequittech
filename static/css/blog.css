@@ -169,7 +169,7 @@ a:hover {
 /* Responsive Media Queries */
 /* max width = "anything smaller than x"  */
 
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1470px) {
   .archive-splash {
     padding-top: 500px;
   }
