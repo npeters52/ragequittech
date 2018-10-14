@@ -103,7 +103,7 @@ a:hover {
 }
 
 .color-black {
-  color: black;
+  color: white !important;
 }
 
 @media screen and (max-width: 1370px) {
