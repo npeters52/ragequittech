@@ -5,7 +5,7 @@
   <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}"/>
 </head>
 
-<body class="background-white">
+<body class="blog-body">
     <div class="container-fluid background-white">
         <div class="row col-sm-12 background-white full">
             <div>
@@ -15,12 +15,12 @@
                 <div class="blog-post-image text-center">
                     <img src="{{article.image.url}}">
                 </div>
-                <div class="row text-center color-black title-font">
+                <div class="row text-center color-white title-font">
                     <h1>{{article.title}}</h1>
                     <h3>by: {{article.author}}</h3>
                     <h4>{{article.pub_date}}</h4>
                 </div>
-                <div class="row blog-content color-black">
+                <div class="row blog-content color-white">
                 {{article.content|safe}}
                 </div>
                 <div class="row text-center theme-white blog-detail-footer">
