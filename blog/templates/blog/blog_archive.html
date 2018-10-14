@@ -17,7 +17,7 @@
                 <div>
                     <ul class="blog-ul text-center">
                         {% for article in archive_list %}
-                        <div  class="row background-white">
+                        <div  class="row">
                             <li>
                             <h1>
                                 <a class="color-black title-font top-article-title" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }}</a>
