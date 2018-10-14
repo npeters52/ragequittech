@@ -26,8 +26,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 75%;
-    width: 100vh;
 }
 
 .full-page {
@@ -73,6 +71,8 @@
 
 .podcast-home {
     padding-top: 15%;
+    height: 75%;
+    width: 100vh;
 }
 
 .footer-background {
