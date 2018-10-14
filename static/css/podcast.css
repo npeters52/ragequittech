@@ -1,10 +1,6 @@
 .podcast-splash {
     height: 100%;
     width: 100%;
-    background-image: url("/MEDIA/vertical_sky.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .full {
@@ -64,6 +60,10 @@
 
 .podcast-content {
   margin-top: 8%;
+  background-image: url("/MEDIA/vertical_sky.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 a:hover {
