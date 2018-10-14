@@ -3,6 +3,14 @@
     font-family: 'Bungee Inline', cursive;
 }
 
+.blog-body {
+  background-image: url("/MEDIA/vertical_sunset.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
 .title-font {
   font-family: 'Bungee Inline', cursive;
 }
