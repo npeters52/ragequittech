@@ -15,7 +15,7 @@
               {% for article in top_article %}
               <div class="row">
                 <h3>
-                  <a class="color-black title-font top-article-title blog-new-article-parse" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }}</a>
+                  <a class="color-white title-font top-article-title blog-new-article-parse" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }}</a>
                 </h3>
               </div>
                 {% if article.preview_image %}
@@ -41,7 +41,7 @@
                     <div class="col-sm-4 blog-sidebar-item display-block">
                       <img src="{{article.preview_image.url}}" class="rounded home-img-resize display-block" alt="article.title">
                       <li>
-                          <a class="color-black title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
+                          <a class="color-white title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
                       </li>
                       <li class="display-block">
                         <p class="color-white display-block blog-preview-text">
@@ -52,7 +52,7 @@
                     {% else %}
                     <div  class="row jumbotron jumbotron-fluid text-center">
                         <li>
-                            <a class="color-black title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
+                            <a class="color-white title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
                         </li>
                         <li>
                             <p class="blog-preview-text color-white">
