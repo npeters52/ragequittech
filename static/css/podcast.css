@@ -16,10 +16,10 @@
 }
 
 .podcast-detail-background {
-    background-image: url("/MEDIA/vertical_sky.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("/MEDIA/vertical_sky.jpg") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
 
 .podcast-block {
