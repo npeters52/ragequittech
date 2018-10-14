@@ -27,23 +27,6 @@ def home(request):
     }
     return render(request, 'home/home.html', context)
 
-# def search(request):
-#     query_string = ''
-#     found_entries = None
-#     if ('q' in request.GET) and request.GET['q'].strip():
-#         query_string = request.GET['q']
-
-#         entry_query = get_query(query_string, ['title', 'body',])
-
-#         found_entries = Article.objects.filter(entry_query).order_by('-pub_date')
-
-#     context = {
-#         'query_string': query_string, 
-#         'found_entries': found_entries
-#     }
-
-#     return render(request, 'home/search_results.html', context)
-
 def search(request):
     query = request.GET.get("q")
 
