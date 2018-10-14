@@ -102,9 +102,6 @@ a:hover {
   font-size: 30px;
 }
 
-.color-black {
-  color: white !important;
-}
 
 @media screen and (max-width: 1370px) {
   .podcast-index-archive {
