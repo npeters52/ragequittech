@@ -162,7 +162,7 @@ a:hover {
 .blog-preview-text {
   font-size: 16px;
   height: 50%;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 
