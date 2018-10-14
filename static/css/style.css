@@ -73,7 +73,7 @@
 
 .podcast-home {
     padding-top: 15%;
-    margin-left: -20%;
+    margin-left: -20% !important;
     margin-right: -20% !important;
 }
 
