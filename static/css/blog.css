@@ -144,6 +144,10 @@ a:hover {
   max-height: 100%;
 }
 
+.blog-detail-footer {
+  padding-top: 15%;
+}
+
 .pagination {
   font-size: 30px;
 }
