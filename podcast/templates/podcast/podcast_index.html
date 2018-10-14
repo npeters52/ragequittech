@@ -43,19 +43,19 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row text-center theme-white podcast-archive-footer">
-            <div class="row text-center pagination title-font">
-                    {% if podcast_archive_list.has_previous %}
-                        <a class="color-black" href="?page={{ podcast_archive_list.previous_page_number }}">&laquo;</a>
-                    {% endif %}
-                    <span class="current color-black">
-                        Page {{ podcast_archive_list.number }} of {{ podcast_archive_list.paginator.num_pages }}
-                    </span>
-                    {% if podcast_archive_list.has_next %}
-                        <a class="color-black" href="?page={{ podcast_archive_list.next_page_number }}">&raquo;</a>
-                    {% endif %}
-            </div>
-        {% include "home/footer.html" %}
+        <div class="row text-center theme-white podcast-archive-footer">
+                <div class="row text-center pagination title-font">
+                        {% if podcast_archive_list.has_previous %}
+                            <a class="color-black" href="?page={{ podcast_archive_list.previous_page_number }}">&laquo;</a>
+                        {% endif %}
+                        <span class="current color-black">
+                            Page {{ podcast_archive_list.number }} of {{ podcast_archive_list.paginator.num_pages }}
+                        </span>
+                        {% if podcast_archive_list.has_next %}
+                            <a class="color-black" href="?page={{ podcast_archive_list.next_page_number }}">&raquo;</a>
+                        {% endif %}
+                </div>
+            {% include "home/footer.html" %}
+        </div>
     </div>
 </body>
