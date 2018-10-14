@@ -162,18 +162,12 @@ a:hover {
 .blog-preview-text {
   font-size: 16px;
   max-height: 100%;
+  word-wrap:break-word;
 }
 
 
 /* Responsive Media Queries */
 /* max width = "anything smaller than x"  */
-
-@media screen and (max-width: 1400px) {
-  .blog-preview-text {
-    font-size: 14px;
-  }
-}
-
 
 @media screen and (max-width: 1370px) {
   .archive-splash {
