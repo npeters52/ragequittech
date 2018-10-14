@@ -15,6 +15,13 @@
     background-size: cover;
 }
 
+.podcast-detail-background {
+    background-image: url("/MEDIA/vertical_sky.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .podcast-block {
   list-style: none;
 }
@@ -60,10 +67,6 @@
 
 .podcast-content {
   margin-top: 8%;
-  background-image: url("/MEDIA/vertical_sky.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 a:hover {
