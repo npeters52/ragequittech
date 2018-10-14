@@ -10,8 +10,11 @@
 .home-splash {
     padding-top: 30px;
     width: 100%;
-    background-image: url("/MEDIA/space_splash.jpg");
     height: 100%;
+}
+
+.background-image {
+    background-image: url("/MEDIA/space_splash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
