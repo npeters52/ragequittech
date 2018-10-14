@@ -167,10 +167,19 @@ a:hover {
 /* Responsive Media Queries */
 /* max width = "anything smaller than x"  */
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1400px) {
   .blog-preview-text {
     font-size: 14px;
     margin-bottom: 25%;
+    position: relative;
+  }
+  .blog-sidebar-item {
+    height: 200px;
+    width: 400px;
+    float: right !important;
+    margin-right: 5%;
+    margin-bottom: 15%;
+    position: relative;
   }
 }
 
