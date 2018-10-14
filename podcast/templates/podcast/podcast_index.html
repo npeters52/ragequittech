@@ -15,7 +15,7 @@
                 <h1 class="text-center title-font podcast-title">Podcast Archive</h1>
                 <div class="podcast-header text-center">
                     <h1>
-                        <a class="title-font color-black" href="https://www.youtube.com/channel/UCqoLuruSGXpTlHLOzh_h1Ew">Check out our Channel</a>
+                        <a class="title-font color-white" href="https://www.youtube.com/channel/UCqoLuruSGXpTlHLOzh_h1Ew">Check out our Channel</a>
                     </h1>
                 </div>
                 <div>
@@ -25,10 +25,10 @@
                         <div  class="row col-sm-12 podcast-block center">
                             <li>
                               <h1>
-                                <a class="title-font top-article-title color-black" style="text-decoration:none" href="{% url 'podcast:podcast_detail' podcast.id %}">{{ podcast.name }}</a>
+                                <a class="title-font top-article-title color-white" style="text-decoration:none" href="{% url 'podcast:podcast_detail' podcast.id %}">{{ podcast.name }}</a>
                               </h1>
                               <h4>
-                                  <p class="title-font color-black">
+                                  <p class="title-font color-white">
                                       {{podcast.pub_date}}
                                   </p>
                               </h4>
@@ -45,13 +45,13 @@
             <div class="row text-center podcast-archive-footer">
                     <div class="row text-center pagination title-font">
                             {% if podcast_archive_list.has_previous %}
-                                <a class="color-black" href="?page={{ podcast_archive_list.previous_page_number }}">&laquo;</a>
+                                <a class="color-white" href="?page={{ podcast_archive_list.previous_page_number }}">&laquo;</a>
                             {% endif %}
-                            <span class="current color-black">
+                            <span class="current color-white">
                                 Page {{ podcast_archive_list.number }} of {{ podcast_archive_list.paginator.num_pages }}
                             </span>
                             {% if podcast_archive_list.has_next %}
-                                <a class="color-black" href="?page={{ podcast_archive_list.next_page_number }}">&raquo;</a>
+                                <a class="color-white" href="?page={{ podcast_archive_list.next_page_number }}">&raquo;</a>
                             {% endif %}
                     </div>
                 {% include "home/footer.html" %}

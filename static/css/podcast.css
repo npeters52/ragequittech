@@ -45,6 +45,10 @@
   background-color: white;
 }
 
+.color-white {
+  color: white;
+}
+
 .margin-fix {
   width: 100%;
 }
