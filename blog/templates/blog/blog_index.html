@@ -26,7 +26,7 @@
                   <p>No preview image available</p>
                 {% endif %}
                 <div class="row top-article-text display-block">
-                    <p class="color-black">
+                    <p class="color-white">
                         {{ article.content|striptags|truncatewords:50 }}
                     </p>
                 </div>
@@ -44,7 +44,7 @@
                           <a class="color-black title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
                       </li>
                       <li class="display-block">
-                        <p class="color-black display-block blog-preview-text">
+                        <p class="color-white display-block blog-preview-text">
                           {{ article.content|striptags|truncatewords:50 }}
                         </p>
                       </li>
@@ -55,7 +55,7 @@
                             <a class="color-black title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
                         </li>
                         <li>
-                            <p class="blog-preview-text color-black">
+                            <p class="blog-preview-text color-white">
                               {{ article.content|striptags|truncatewords:50 }}
                             </p>
                         </li>
