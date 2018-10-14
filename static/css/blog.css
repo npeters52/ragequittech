@@ -86,12 +86,11 @@ a:hover {
 }
 
 .blog-sidebar-item {
-  height: 200px;
-  width: 400px;
+  min-height: 200px;
+  min-width: 400px;
   float: right !important;
   margin-right: 5%;
   margin-bottom: 15%;
-  word-wrap:break-word;
 }
 
 .resize {
