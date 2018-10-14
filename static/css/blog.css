@@ -88,6 +88,8 @@ a:hover {
 .blog-sidebar-item {
   height: 200px;
   width: 400px;
+  max-height: 200px;
+  max-width: 400px;
   float: right !important;
   margin-right: 5%;
   margin-bottom: 15%;
