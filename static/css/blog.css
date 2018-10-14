@@ -170,16 +170,16 @@ a:hover {
   .archive-splash {
     padding-top: 500px;
   }
-}
-
-@media screen and (max-width: 1280px) {
-  .blog-sidebar-item {
-    
-  }
   .top-article-text {
     display: none !important;
   }
   .blog-preview-text {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .blog-sidebar-item {
+    
   }
 }
