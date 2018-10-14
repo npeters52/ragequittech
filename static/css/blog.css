@@ -134,7 +134,7 @@ a:hover {
 }
 
 .blog-image {
-  height: 100%;
+  max-height: 100%;
 }
 
 .blog-detail-footer {
