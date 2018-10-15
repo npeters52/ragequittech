@@ -224,6 +224,6 @@ a:hover {
     text-align: center;
   }
   .blog-ul {
-    text-align: center;
+    text-align: right !important;
   }
 }
