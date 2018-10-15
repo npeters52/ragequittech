@@ -217,7 +217,7 @@ a:hover {
   }
   .preview-image {
     display: block !important;
-    height: 10%;
-    width: 10%;
+    height: 60%;
+    width: 60%;
   } 
 }
