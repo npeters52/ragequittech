@@ -186,7 +186,7 @@ a:hover {
   .blog-sidebar-item {
     height: 25%;
     width: 25%;
-    clear: right;
+    clear: both;
     float: left !important;
     margin-bottom: 0%;
   }
