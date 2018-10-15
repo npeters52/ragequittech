@@ -51,7 +51,7 @@ a:hover {
 .blog-sidebar {
   height: 75%;
   display: block;
-  float: right;
+  float: right !important;
   padding-top: 6%;
 }
 
