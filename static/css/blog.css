@@ -215,4 +215,7 @@ a:hover {
   .top-article-title {
     font-size: 50px;
   }
+  .preview-image {
+    display: block;
+  } 
 }
