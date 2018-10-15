@@ -95,7 +95,7 @@ a:hover {
 .blog-sidebar-item {
   height: 200px;
   width: 400px;
-  float: right !important;
+  float: right;
   margin-right: 5%;
   margin-bottom: 15%;
 }
@@ -187,7 +187,8 @@ a:hover {
     height: 25%;
     width: 25%;
     clear: right;
-    float: left;
+    float: left !important;
+    margin-bottom: 0%;
   }
 }
 
