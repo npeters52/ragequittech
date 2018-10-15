@@ -175,7 +175,7 @@ a:hover {
 
 @media only screen and (max-device-width : 600px) {
   .top-article {
-    clear: both;
+    clear: both !important;
   }
 }
 
