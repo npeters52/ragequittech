@@ -173,7 +173,7 @@ a:hover {
 /* Responsive Media Queries */
 /* max width = "anything smaller than x"  */
 
-@media screen and (max-width : 1400px) {
+@media screen and (max-width : 600px) {
   .top-article {
     clear: both !important;
   }
