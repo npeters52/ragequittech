@@ -214,4 +214,7 @@ a:hover {
   .blog-sidebar {
     float: left !important;
   }
+  .top-article-title {
+    font-size: 30px;
+  }
 }
