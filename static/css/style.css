@@ -30,7 +30,6 @@
 
 .full-page {
     height: 100vh;
-    width: 100vh !important;
 }
 
 .theme-green {
@@ -85,6 +84,13 @@
 }
 
 /* Responsive Media Queries */
+
+@media screen and (max-width : 800px) {
+    .full-page {
+        width: 100vh !important;
+        height: 100vh !important;
+    }
+}
 
 @media screen and (max-width: 1280px) {
     .home-splash {
