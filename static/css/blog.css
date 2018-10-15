@@ -187,7 +187,7 @@ a:hover {
     height: 25%;
     width: 25%;
     clear: both;
-    float: left !important;
+    float: left;
     margin-bottom: 0%;
   }
 }
