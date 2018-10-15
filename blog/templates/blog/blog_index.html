@@ -39,7 +39,7 @@
                 {% for article in article_list %}
                   {% if article.preview_image %}
                     <div class="col-sm-4 blog-sidebar-item display-block">
-                      <img src="{{article.preview_image.url}}" class="rounded home-img-resize display-block" alt="article.title">
+                      <img src="{{article.preview_image.url}}" class="rounded home-img-resize display-block list-preview-image" alt="article.title">
                       <li>
                           <a class="color-white title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
                       </li>

@@ -180,6 +180,9 @@ a:hover {
   .preview-image {
     display: none !important;
   }
+  .list-preview-image {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 1470px) {
