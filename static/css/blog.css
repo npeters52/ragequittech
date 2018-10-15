@@ -177,6 +177,9 @@ a:hover {
   .top-article {
     clear: both !important;
   }
+  .preview-image {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 1470px) {
