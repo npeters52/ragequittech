@@ -173,7 +173,7 @@ a:hover {
 /* Responsive Media Queries */
 /* max width = "anything smaller than x"  */
 
-@media only screen and (max-device-width : 600px) {
+@media only screen and (max-device-width : 1400px) {
   .top-article {
     clear: both !important;
   }
