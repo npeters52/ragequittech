@@ -220,4 +220,7 @@ a:hover {
     height: 60%;
     width: 60%;
   } 
+  .blog-list {
+    text-align: center;
+  }
 }
