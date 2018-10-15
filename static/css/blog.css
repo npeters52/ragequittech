@@ -209,3 +209,9 @@ a:hover {
     
   }
 }
+
+@media screen and (max-width: 320px) {
+  .blog-sidebar {
+    float: left !important;
+  }
+}
