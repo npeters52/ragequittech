@@ -173,6 +173,7 @@ a:hover {
 /* Responsive Media Queries */
 /* max width = "anything smaller than x"  */
 
+/* WHERE OVERLAP BEGINS, FORCE ELEMENTS TO HIDE */
 @media screen and (max-width : 800px) {
   .top-article {
     
@@ -192,6 +193,7 @@ a:hover {
   }
 }
 
+/* LAPTOPS, SMALLER DESKTOP SCREENS */
 @media screen and (max-width: 1470px) {
   .archive-splash {
     padding-top: 500px;
@@ -204,12 +206,8 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 1280px) {
-  .blog-sidebar-item {
-    
-  }
-}
 
+/* MOBILE PHONES, SMALL TABLETS */
 @media screen and (max-width: 768px) {
   .blog-sidebar {
     float: left !important;
