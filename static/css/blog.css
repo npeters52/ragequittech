@@ -173,6 +173,12 @@ a:hover {
 /* Responsive Media Queries */
 /* max width = "anything smaller than x"  */
 
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .top-article {
+    clear: right;
+  }
+}
+
 @media screen and (max-width: 1470px) {
   .archive-splash {
     padding-top: 500px;
