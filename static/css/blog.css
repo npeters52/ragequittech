@@ -216,9 +216,7 @@ a:hover {
     font-size: 50px;
   }
   .preview-image {
-    display: block !important;
-    height: 60%;
-    width: 60%;
+    display: none !important;
   } 
   .blog-list {
     text-align: center;
