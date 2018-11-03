@@ -193,6 +193,7 @@ a:hover {
   }
 }
 
+/* MEDIUM */
 /* LAPTOPS, SMALLER DESKTOP SCREENS */
 @media screen and (max-width: 1470px) {
   .archive-splash {
@@ -206,7 +207,7 @@ a:hover {
   }
 }
 
-
+/* SMALL */
 /* MOBILE PHONES, SMALL TABLETS */
 @media screen and (max-width: 768px) {
   .blog-sidebar {
