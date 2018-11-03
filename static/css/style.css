@@ -86,14 +86,14 @@
 
 /* Responsive Media Queries */
 
-@media screen and (max-width : 800px) {
-    .full-page {
+/* MEDIUM */
+/* LAPTOPS, SMALLER DESKTOP SCREENS */
+@media screen and (max-width: 1470px) {
 
-    }
 }
+  
+/* SMALL */
+/* MOBILE PHONES, SMALL TABLETS */
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 1280px) {
-    .home-splash {
-      
-    }
 }

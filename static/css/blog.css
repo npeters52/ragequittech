@@ -216,6 +216,9 @@ a:hover {
   .top-article-title {
     font-size: 50px;
   }
+  .article-list {
+    font-size: 50px;
+  }
   .preview-image {
     display: none !important;
   } 
