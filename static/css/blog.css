@@ -215,6 +215,7 @@ a:hover {
   }
   .top-article-title {
     font-size: 50px;
+    float: none;
   }
   .article-list {
     font-size: 50px;
