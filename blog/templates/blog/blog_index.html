@@ -43,7 +43,7 @@
                       <li>
                           <a class="color-white title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
                       </li>
-                      <li class="display-block">
+                      <li>
                         <p class="color-white  blog-preview-text">
                           {{ article.content|striptags|truncatewords:50 }}
                         </p>
