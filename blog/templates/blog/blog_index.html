@@ -10,7 +10,7 @@
       <div class="row blog-splash col-m-12">
         {% if article_list %}
         <div class="blog-list">
-          <div class="justify-content-start top-article">
+          <div class="col-sm-4 top-article">
             <!-- START TOP ARTICLE -->
               {% for article in top_article %}
               <div class="row">
@@ -38,7 +38,7 @@
               <!-- ARTICLE LIST START -->
                 {% for article in article_list %}
                   {% if article.preview_image %}
-                    <div class="d-flex justify-content-end blog-sidebar-item display-block">
+                    <div class="col-sm-4 blog-sidebar-item display-block">
                       <img src="{{article.preview_image.url}}" class="rounded home-img-resize display-block list-preview-image" alt="article.title">
                       <li>
                           <a class="color-white title-font article-list" href="{% url 'blog:blogpost' article.id %}">{{ article.title }} </a>
