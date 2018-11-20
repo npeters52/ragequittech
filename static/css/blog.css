@@ -237,7 +237,7 @@ a:hover {
     margin-left: 17vh !important;
   }
   .post-image {
-    height: 1vh;
-    width: 1vh;
+    height: 10vh;
+    width: 10vh;
   }
 }
