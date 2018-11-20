@@ -42,7 +42,6 @@ a:hover {
 }
 
 .blog-splash {
-  /* padding-top: 5%; */
   height: 100%;
   margin-left: 20px !important;
   margin-right: 20px !important;
@@ -72,7 +71,7 @@ a:hover {
 }
 
 .top-article-title {
-  font-size: 3vw;
+  font-size: 5vw;
 }
 
 .blog-ul {
