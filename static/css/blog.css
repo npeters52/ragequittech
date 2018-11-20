@@ -216,6 +216,9 @@ a:hover {
     font-size: 50px;
     float: none;
   }
+  .top-article {
+    margin-left: 2vh;
+  }
   .article-list {
     font-size: 50px;
   }
