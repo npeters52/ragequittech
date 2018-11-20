@@ -42,7 +42,7 @@ a:hover {
 }
 
 .blog-splash {
-  padding-top: 5%;
+  /* padding-top: 5%; */
   height: 100%;
   margin-left: 20px !important;
   margin-right: 20px !important;
@@ -68,7 +68,7 @@ a:hover {
   height: 30% !important;
   display: block;
   float: left;
-  padding-top: 5%;
+  /* padding-top: 5%; */
 }
 
 .top-article-title {
