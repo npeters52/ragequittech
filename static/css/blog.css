@@ -172,6 +172,7 @@ a:hover {
 /* max width = "anything smaller than x"  */
 
 /* WHERE OVERLAP BEGINS, FORCE ELEMENTS TO HIDE */
+/* CUSTOM STLYING TO HOMEPAGE, NOT STANDARD SCREEN SIZE-DEPENDENT */
 @media screen and (max-width : 800px) {
   .top-article {
     
@@ -234,5 +235,9 @@ a:hover {
   .blog-splash {
     height: 100%;
     margin-left: 17vh !important;
+  }
+  .blog-post-image {
+    height: 10vh;
+    width: 10vh;
   }
 }
