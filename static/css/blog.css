@@ -228,4 +228,9 @@ a:hover {
   .blog-ul {
     text-align: right !important;
   }
+  .blog-splash {
+    height: 100%;
+    margin-left: 50% !important;
+    margin-right: 50% !important;
+  }
 }
