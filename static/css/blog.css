@@ -246,3 +246,7 @@ a:hover {
     margin-right: 10vh !important;
   }
 }
+
+@media screen and (max-width: 300px) {
+  
+}
