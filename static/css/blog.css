@@ -80,6 +80,12 @@ a:hover {
   padding-bottom: 15%;
 }
 
+.blog-index-ul {
+  list-style: none;
+  margin-top: 5%;
+  padding-bottom: 15%;
+}
+
 .home-img-resize {
   width:100% !important;
   max-height:100%;
