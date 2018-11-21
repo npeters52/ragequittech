@@ -248,6 +248,10 @@ a:hover {
     height: 100%;
     margin-left: 17vh !important;
   }
+  .blog-content-splash {
+    padding-left: 10vh;
+    padding-right: 10vh;
+  }
   .post-image {
     height: 35vh;
     max-height: 100%;
