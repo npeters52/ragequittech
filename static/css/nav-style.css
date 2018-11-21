@@ -144,7 +144,7 @@
     font-size: 3vh !important;
   }
   .topnav {
-    width: 100vh;
+    width: auto;
   }
 }
 
