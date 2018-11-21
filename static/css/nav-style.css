@@ -78,7 +78,7 @@
     background-color: #00ff37;
     position: fixed;
     z-index: 1;
-    /* width: 100%; */
+    width: 100%;
     max-width: 100%;
   }
   
@@ -142,6 +142,9 @@
 @media screen and (max-width: 768px) {
   .title {
     font-size: 3vh !important;
+  }
+  .topnav {
+    width: 100vh;
   }
 }
 
