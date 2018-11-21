@@ -1,4 +1,4 @@
-.site-nav {
+/* .site-nav {
   overflow: hidden;
   background-color: rgb(0, 0, 0);
   position: fixed;
@@ -6,7 +6,7 @@
   z-index: 1;
   margin-left: -15px;
   width: 100vh;
-}
+} */
 
 .nav-ul {
     list-style-type: none;
@@ -78,7 +78,7 @@
     background-color: #00ff37;
     position: fixed;
     z-index: 1;
-    width: 100%;
+    width: 98%;
     max-width: 100%;
   }
   
