@@ -244,8 +244,8 @@ a:hover {
     margin-top: 15vh;
   }
   .blog-content {
-    margin-left: 10vh !important;
-    margin-right: 10vh !important;
+    margin-left: none !important;
+    margin-right: none !important;
   }
 }
 
