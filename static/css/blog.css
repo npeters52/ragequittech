@@ -238,7 +238,9 @@ a:hover {
   }
   .post-image {
     height: 35vh;
+    max-height: 100%;
     width: 60vh;
+    max-width: 100%;
     margin-top: 15vh;
   }
   .blog-content {
