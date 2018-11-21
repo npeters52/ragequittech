@@ -92,6 +92,7 @@ a:hover {
 .podcast-title {
   padding-top: 105px;
   font-size: 70px;
+  margin-top: 0px !important;
 }
 
 .podcast-details {
