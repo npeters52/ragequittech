@@ -10,7 +10,7 @@ def youtube_embed_url(value):
     match = re.search(r'^(http|https)\:\/\/www\.youtube\.com\/watch\?v\=(\w*)(\&(.*))?$', value)
     if match:
         embed_url = 'https://www.youtube.com/embed/%s' %(match.group(2))
-        res = "<iframe class="podcast-iframe" src=\"%s\" frameborder=\"0\" allowfullscreen></iframe>" %(embed_url)
+        res = "<iframe width=\"30vh\" height=\"30vh\" src=\"%s\" frameborder=\"0\" allowfullscreen></iframe>" %(embed_url)
         return res
     return ''
 
