@@ -30,5 +30,5 @@ urlpatterns = [
     url(r'^podcast/', include('podcast.urls')),
     url(r'^$', home, name='home'),
     url(r'^search/', search, name='search'),
-    url(r'^$', TemplateView.as_view(template_name='home/about.html'), name="about")
+    url(r'^about/', TemplateView.as_view(template_name='home/about.html'), name="about")
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
