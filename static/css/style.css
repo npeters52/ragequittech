@@ -28,6 +28,13 @@
     background-size: cover;
 }
 
+.background-image-moon {
+    background-image: url("/MEDIA/about_moon.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .full-page {
     height: 100%;
     width: 100%;
