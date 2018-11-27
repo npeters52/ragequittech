@@ -8,7 +8,7 @@
       <div class="row blog-splash col-sm-12">
         {% if article_list %}
         <div class="blog-list">
-          <div class="col-sm-4 top-article">
+          {% comment %} <div class="col-sm-4 top-article">
             <!-- START TOP ARTICLE -->
               {% for article in top_article %}
               <div class="row">
@@ -62,7 +62,7 @@
                 {% endfor %}
                 <!-- ARTICLE LIST END -->
             </ul>
-          </div>
+          </div> {% endcomment %}
         </div>
         {% else %}
             <p> No articles are available </p>
