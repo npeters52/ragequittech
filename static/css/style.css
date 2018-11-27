@@ -107,7 +107,6 @@
 /* MOBILE PHONES, SMALL TABLETS */
 @media screen and (max-width: 768px) {
     .full-page {
-        height: 100vh;
-        width: 100vh;
+        
     }
 }
