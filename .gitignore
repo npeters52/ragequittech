@@ -4,3 +4,4 @@ settings.py
 wsgi.py
 MEDIA/
 *.pyc
+db.sqlite3
