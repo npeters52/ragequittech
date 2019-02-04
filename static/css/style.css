@@ -28,8 +28,8 @@
     background-size: cover;
 }
 
-.background-image-moon {
-    background-image: url("/MEDIA/about_moon.jpg");
+.background-image-sunset {
+    background-image: url("/MEDIA/mountain_sunset.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,6 +95,10 @@
     color: black;
 }
 
+.about-splash {
+    padding-top: 5vh;
+}
+
 /* Responsive Media Queries */
 
 /* MEDIUM */
@@ -108,5 +112,8 @@
 @media screen and (max-width: 768px) {
     .full-page {
         
+    }
+    .about-splash {
+        padding-top: 20vh;
     }
 }
