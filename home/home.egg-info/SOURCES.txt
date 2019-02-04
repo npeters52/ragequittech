@@ -1,0 +1,6 @@
+setup.py
+home.egg-info/PKG-INFO
+home.egg-info/SOURCES.txt
+home.egg-info/dependency_links.txt
+home.egg-info/top_level.txt
+migrations/__init__.py

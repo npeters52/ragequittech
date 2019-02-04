@@ -1,29 +1,35 @@
+<!DOCTYPE html>
 {% load staticfiles %}
-
+<html lang="en">
 <head>
     {% include "home/head.html" %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/podcast.css' %}">
 </head>
 
-<body>
+<body class="full">
     <div>
-        <div class="col-sm-12 podcast-splash">
-            <div>
-                {% include "home/nav.html" %}
-            </div>
-            <div class="row col-sm-12 text-center">
-                <h1 class="theme-yellow text-center title-font">Podcast Archive</h1>
+        <div>
+            {% include "home/nav.html" %}
+        </div>
+        <div class="col-sm-12 podcast-archive-splash">
+            <div class="text-center podcast-index-archive">
+                <h1 class="text-center title-font podcast-title color-white">Podcast Archive</h1>
+                <div class="podcast-header text-center">
+                    <h1>
+                        <a class="title-font color-white" href="https://www.youtube.com/channel/UCqoLuruSGXpTlHLOzh_h1Ew">Check out our Channel</a>
+                    </h1>
+                </div>
                 <div>
-                    {% if podcast_list %}
-                    <ul class="podcast-block">
-                        {% for podcast in podcast_list %}
-                        <div  class="row col-sm-12 podcast-block">
+                    {% if podcast_archive_list %}
+                    <ul class="podcast-block img-responsive">
+                        {% for podcast in podcast_archive_list %}
+                        <div  class="row col-sm-12 podcast-block center">
                             <li>
                               <h1>
-                                <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url 'podcast:podcast_detail' podcast.id %}">{{ podcast.name }}
-                              </h3>
+                                <a class="title-font top-article-title color-white" style="text-decoration:none" href="{% url 'podcast:podcast_detail' podcast.id %}">{{ podcast.name }}</a>
+                              </h1>
                               <h4>
-                                  <p class="theme-green title-font">
+                                  <p class="title-font color-white">
                                       {{podcast.pub_date}}
                                   </p>
                               </h4>
@@ -37,6 +43,21 @@
                     {% endif %}
                 </div>
             </div>
+            <div class="row text-center podcast-archive-footer">
+                    <div class="row text-center pagination title-font">
+                            {% if podcast_archive_list.has_previous %}
+                                <a class="color-white" href="?page={{ podcast_archive_list.previous_page_number }}">&laquo;</a>
+                            {% endif %}
+                            <span class="current color-white">
+                                Page {{ podcast_archive_list.number }} of {{ podcast_archive_list.paginator.num_pages }}
+                            </span>
+                            {% if podcast_archive_list.has_next %}
+                                <a class="color-white" href="?page={{ podcast_archive_list.next_page_number }}">&raquo;</a>
+                            {% endif %}
+                    </div>
+                {% include "home/footer.html" %}
+            </div>
         </div>
     </div>
 </body>
+</html>

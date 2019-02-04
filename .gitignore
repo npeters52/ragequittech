@@ -1,0 +1,6 @@
+# ignore files dependent for local devevelopment
+
+settings.py
+wsgi.py
+MEDIA/
+*.pyc

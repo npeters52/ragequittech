@@ -1,36 +1,30 @@
+<!DOCTYPE html>
 {% load static %}
-<html>
+<html lang="en">
     <head>
         {% include "home/head.html" %}
         <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
     </head>
-    <body>
-        <div>
+    <body class="full-page">
+        <div class="full-width">
+            {% include "home/nav.html" %}
+        </div>
+        <div class="container-fluid background-image-night full-page">
             <div class="col-sm-12 home-splash">
-                <div class="full-width">
-                    {% include "home/nav.html" %}
-                </div>
                 <div class="row">
                     <div class="col-sm-12 home-main">
                         {% include 'blog/blog_index.html' %}
                     </div>
                 </div>
-                <!-- polls app start-->
-                <!--<div class="row full-width">
-                    <div class="col-sm-12 poll">
-                        {% include 'polls/index.html' %}
-                    </div>
-                </div>-->
-                <!-- polls app end-->
-                <div class="row">
-                    <div class="col-sm-10 podcast text-center">
-                        {% include 'podcast/podcast_home_splash.html' %}
-                    </div>
-                </div>
-                <div class="row">
-                        <div class="col-sm-12 footer text-center">
-                            {% include 'home/footer.html' %}
-                        </div>
+            </div>
+        </div>
+        <div class="podcast-home text-center background-image-mountains full-page">
+            <div class="col-sm-12">
+                    {% include 'podcast/podcast_home_splash.html' %}
+            </div>
+            <div class="row footer-bottom">
+                <div class="col-sm-12 text-center">
+                    {% include 'home/footer.html' %}
                 </div>
             </div>
         </div>

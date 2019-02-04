@@ -1,27 +1,22 @@
 {% load staticfiles %}
 
 <head>
-    {% include "home/head.html" %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/podcast.css' %}">
 </head>
-
-<body>
     <div>
-        <div class="col-sm-12 podcast-home-splash">
-            <div class="row col-sm-12">
+        <div class="row col-sm-12 podcast-home-splash">
+            <div class="row">
                 <div class="podcast-splash">
                     {% if podcast_list %}
-                    <ul class="podcast-block">
+                    <div class="row podcast-block text-center">
                         {% for podcast in podcast_list %}
-                        <div  class="row col-sm-12">
-                            <li>
+                        <div  class="row col-sm-4">
                               <h3>
-                                <a class="theme-green top-article-title" style="text-decoration:none" href="{% url 'podcast:podcast_detail' podcast.id %}">{{ podcast.name }}</a>
+                                <a class="color-black title-font top-article-title" style="text-decoration:none" href="{% url 'podcast:podcast_detail' podcast.id %}">{{ podcast.name }}</a>
                               </h3>
-                            </li>
                         </div>
                         {% endfor %}
-                    </ul>
+                    </div>
                     {% else %}
                         <p>No podcasts are available</p>
                     {% endif %}
@@ -29,4 +24,3 @@
             </div>
         </div>
     </div>
-</body>

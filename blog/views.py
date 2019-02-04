@@ -3,11 +3,12 @@ from django.http import HttpResponse, HttpResponseRedirect
 from .models import Article, Category
 from django.template import loader
 from django.urls import reverse
+from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 
 # Create your views here.
 
 def articles(request):
-    article_list = Article.objects.order_by('-pub_date')[:10]
+    article_list = Article.objects.order_by('-pub_date')
     context = {
         'article_list':article_list
     }
@@ -19,7 +20,15 @@ def blogpost(request, article_id):
 
 def archive(request):
     archive_list = Article.objects.order_by('-pub_date')
+    paginator = Paginator(archive_list, 10)
+    page = request.GET.get('page', 1)
+    try:
+        paginated_articles = paginator.page(page)
+    except PageNotAnInteger:
+        paginated_articles = paginator.page(1)
+    except EmptyPage:
+        paginated_articles = paginator.page(paginator.num_pages)
     context = {
-        'archive_list':archive_list
+        'archive_list':paginated_articles
     }
     return render(request, 'blog/blog_archive.html', context)

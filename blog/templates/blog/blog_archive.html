@@ -1,39 +1,57 @@
+<!DOCTYPE html>
 {% load staticfiles %}
-
+<html lang="en">
 <head>
     {% include "home/head.html" %}
     <link rel="stylesheet" type='text/css' href="{% static 'css/blog.css' %}">
 </head>
 
 <body>
-  <div class="col-sm-12 theme-black">
-      <div>
-          {% include "home/nav.html" %}
-      </div>
-      <div class="archive-splash">
-        <h1 class="theme-yellow text-center title-font">Blog Archive</h1>
-          {% if archive_list %}
-          <div class="row col-sm-12 full">
-            <ul class="blog-ul text-center">
-                {% for article in archive_list %}
-                <div  class="row col-sm-12 theme-black">
-                    <li>
-                      <h1>
-                        <a class="theme-green title-font top-article-title" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }}
-                      </h3>
-                      <h4>
-                          <p class="theme-green title-font">
-                              {{article.pub_date}}
-                          </p>
-                      </h4>
-                    </li>
+    <div>
+        <div>
+            <div>
+                {% include "home/nav.html" %}
+            </div>
+            <div class="archive-splash  blog-body">
+                <h1 class="color-white text-center title-font blog-title">Blog Archive</h1>
+                {% if archive_list %}
+                <div>
+                    <ul class="blog-index-ul text-center">
+                        {% for article in archive_list %}
+                        <div  class="row">
+                            <li>
+                            <h1>
+                                <a class="color-white title-font top-article-title" style="text-decoration:none" href="{% url 'blog:blogpost' article.id %}">{{ article.title }}</a>
+                            </h1>
+                            <h4>
+                                <p class="color-white title-font">
+                                    {{article.pub_date}}
+                                </p>
+                            </h4>
+                            </li>
+                        </div>
+                        {% endfor %}
+                    </ul>
                 </div>
-                {% endfor %}
-            </ul>
-          </div>
-          {% else %}
-          <p> No articles are available </p>
-          {% endif %}
-      </div>
-  </div>
+                {% else %}
+                <p class="theme-white text-center"> No articles are available </p>
+                {% endif %}
+                <div class="row text-center blog-archive-footer">
+                        <div class="row text-center pagination">
+                                {% if archive_list.has_previous %}
+                                    <a class="color-white title-font" href="?page={{ archive_list.previous_page_number }}">&laquo;</a>
+                                {% endif %}
+                                <span class="current color-white title-font">
+                                    Page {{ archive_list.number }} of {{ archive_list.paginator.num_pages }}
+                                </span>
+                                {% if archive_list.has_next %}
+                                    <a class="color-white title-font" href="?page={{ archive_list.next_page_number }}">&raquo;</a>
+                                {% endif %}
+                        </div>
+                    {% include "home/footer.html" %}
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+</html>

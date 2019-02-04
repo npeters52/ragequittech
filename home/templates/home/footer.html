@@ -1,3 +1,20 @@
-<div>
-    <p class="theme-white title-font">RageQuitTech {{ now }}</p>
+{% load static %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+    {% include 'home/head.html' %}
+</head>
+
+<div class="container-fluid">
+    <div class="row">
+                <div class="col-sm-4">
+                    <a href="https://www.patreon.com/thoughtcosmonaut" class="title-font color-white">Support Us</a>
+                </div>
+                <div class="col-sm-4 color-white">
+                    <p class="title-font">Thought Cosmonaut   |   {{ now }}</p>
+                </div>
+                <div class="col-sm-4">
+                    <a href="https://github.com/npeters52/thought-cosmonaut" class="title-font color-white">GitHub</a>
+                </div>
+        </div>
 </div>

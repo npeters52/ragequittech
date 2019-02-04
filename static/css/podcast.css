@@ -1,0 +1,128 @@
+.podcast-splash {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.podcast-archive-splash {
+    background-image: url("/MEDIA/vertical_sky.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.podcast-detail-background {
+    background-image: url("/MEDIA/vertical_sky.jpg") !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.podcast-block {
+  list-style: none;
+}
+
+.splash-resize {
+  width: 50%;
+  height: 50%;
+}
+
+.podcast-home-splash {
+  margin-top: -10%;
+  padding-left: 20%;
+}
+
+.title-font {
+  font-family: 'Bungee Inline', cursive;
+}
+
+.theme-green {
+  color: #00ff37;
+}
+
+.theme-black {
+ background-color: black;
+}
+
+.theme-white {
+  background-color: white;
+}
+
+.color-white {
+  color: white;
+}
+
+.margin-fix {
+  width: 100%;
+}
+
+.theme-yellow {
+  color: #ffff00;
+  font-family: 'Bungee Inline', cursive;
+}
+
+.podcast-content {
+  margin-top: 8%;
+}
+
+a:hover {
+  color: #f218dc !important;
+}
+
+.resize {
+  height: 500px;
+  width : 700px;
+}
+
+.center {
+   margin: auto;
+}
+
+.podcast-header {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  
+}
+
+.podcast-title {
+  padding-top: 105px;
+  font-size: 70px;
+  margin-top: 0px !important;
+}
+
+.podcast-details {
+  margin-bottom: 15%;
+}
+
+.podcast-archive-content {
+  margin-bottom: 15%;
+}
+
+.podcast-archive-footer {
+  margin-top: 15%;
+}
+
+.pagination {
+  font-size: 30px;
+}
+
+.podcast-iframe {
+  height: 20vh;
+  width: 20vh;
+}
+
+
+@media screen and (max-width: 1470px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+  .resize {
+    display: none;
+  }
+}
